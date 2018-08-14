@@ -9,6 +9,17 @@ python_full_version = "3.6.5"
 
 [packages]
 scrapyd = "*"
+"psycopg2-binary" = "*"
+django-heroku = "*"
+gunicorn = "*"
+python-dotenv = "*"
+django = "*"
+scrapy = "*"
+scrapyd = "*"
+python-scrapyd-api = "*"
+pylint-django = "*"
+image = "*"
+whitenoise = "*"
 
 [dev-packages]
 twine = "*"
