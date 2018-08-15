@@ -1,0 +1,1022 @@
+2018-08-06 06:15:08 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: scrapy_app)
+2018-08-06 06:15:08 [scrapy.utils.log] INFO: Versions: lxml 4.1.0.0, libxml2 2.9.4, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.3 |Anaconda, Inc.| (default, Oct  6 2017, 12:04:38) - [GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 17.2.0 (OpenSSL 1.0.2l  25 May 2017), cryptography 2.0.3, Platform Darwin-17.7.0-x86_64-i386-64bit
+2018-08-06 06:15:08 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'scrapy_app', 'LOG_FILE': 'logs/default/oska_products/1044b028994011e89a1a787b8aaf50bd.log', 'NEWSPIDER_MODULE': 'scrapy_app.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['scrapy_app.spiders'], 'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'}
+2018-08-06 06:15:08 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-08-06 06:15:08 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-08-06 06:15:08 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-06 06:15:08 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_app.pipelines.ScrapyAppPipeline']
+2018-08-06 06:15:08 [scrapy.core.engine] INFO: Spider opened
+2018-08-06 06:15:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-06 06:15:08 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-08-06 06:15:10 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://au.oska.com/robots.txt> (referer: None)
+2018-08-06 06:15:10 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-spring-summer/accessories/> from <GET https://au.oska.com/en/products/shop/oska-spring-summer/accessories>
+2018-08-06 06:15:10 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-spring-summer/skirts/> from <GET https://au.oska.com/en/products/shop/oska-spring-summer/skirts>
+2018-08-06 06:15:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-spring-summer/tops/> from <GET https://au.oska.com/en/products/shop/oska-spring-summer/tops>
+2018-08-06 06:15:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-spring-summer/pullover/> from <GET https://au.oska.com/en/products/shop/oska-spring-summer/pullover>
+2018-08-06 06:15:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-spring-summer/jackets/> from <GET https://au.oska.com/en/products/shop/oska-spring-summer/jackets>
+2018-08-06 06:15:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-spring-summer/dresses/> from <GET https://au.oska.com/en/products/shop/oska-spring-summer/dresses>
+2018-08-06 06:15:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-spring-summer/knitwear/> from <GET https://au.oska.com/en/products/shop/oska-spring-summer/knitwear>
+2018-08-06 06:15:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-spring-summer/blouses/> from <GET https://au.oska.com/en/products/shop/oska-spring-summer/blouses>
+2018-08-06 06:15:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-spring-summer/shirts/> from <GET https://au.oska.com/en/products/shop/oska-spring-summer/shirts>
+2018-08-06 06:15:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-spring-summer/outdoor/> from <GET https://au.oska.com/en/products/shop/oska-spring-summer/outdoor>
+2018-08-06 06:15:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-spring-summer/trousers/> from <GET https://au.oska.com/en/products/shop/oska-spring-summer/trousers>
+2018-08-06 06:15:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-spring-summer/vests/> from <GET https://au.oska.com/en/products/shop/oska-spring-summer/vests>
+2018-08-06 06:15:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-linen/blouses/> from <GET https://au.oska.com/en/products/shop/oska-linen/blouses>
+2018-08-06 06:15:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-linen/dresses/> from <GET https://au.oska.com/en/products/shop/oska-linen/dresses>
+2018-08-06 06:15:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-linen/jackets/> from <GET https://au.oska.com/en/products/shop/oska-linen/jackets>
+2018-08-06 06:15:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-linen/shirts/> from <GET https://au.oska.com/en/products/shop/oska-linen/shirts>
+2018-08-06 06:15:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-spring-summer/accessories/> (referer: None)
+2018-08-06 06:15:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-spring-summer/skirts/> (referer: None)
+2018-08-06 06:15:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-spring-summer/tops/> (referer: None)
+2018-08-06 06:15:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-spring-summer/pullover/> (referer: None)
+2018-08-06 06:15:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-spring-summer/dresses/> (referer: None)
+2018-08-06 06:15:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-spring-summer/blouses/> (referer: None)
+2018-08-06 06:15:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-spring-summer/knitwear/> (referer: None)
+2018-08-06 06:15:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-spring-summer/jackets/> (referer: None)
+2018-08-06 06:15:13 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://au.oska.com//en/products/detail/pullover-uzue-10180113001/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-08-06 06:15:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-spring-summer/shirts/> (referer: None)
+2018-08-06 06:15:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-spring-summer/vests/> (referer: None)
+2018-08-06 06:15:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-spring-summer/trousers/> (referer: None)
+2018-08-06 06:15:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-spring-summer/outdoor/> (referer: None)
+2018-08-06 06:15:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-linen/blouses/> (referer: None)
+2018-08-06 06:15:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-linen/jackets/> (referer: None)
+2018-08-06 06:15:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-linen/dresses/> (referer: None)
+2018-08-06 06:15:13 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-linen/skirts/> from <GET https://au.oska.com/en/products/shop/oska-linen/skirts>
+2018-08-06 06:15:13 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-linen/trousers/> from <GET https://au.oska.com/en/products/shop/oska-linen/trousers>
+2018-08-06 06:15:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-linen/shirts/> (referer: None)
+2018-08-06 06:15:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/skirt-belica-10180120052/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/skirts/)
+2018-08-06 06:15:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/skirt-bera-10180120049/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/skirts/)
+2018-08-06 06:15:14 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/skirt-belica-10180120052/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:14 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/skirt-bera-10180120049/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/pullover-anea-60180113017/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/pullover/)
+2018-08-06 06:15:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/pullover-apena-60180113016/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/pullover/)
+2018-08-06 06:15:15 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/pullover-anea-60180113017/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:15 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/pullover-apena-60180113016/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-ardis-60180110017/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/jackets/)
+2018-08-06 06:15:15 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-ardis-60180110017/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/blouse-neville-10180120239/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/blouses/)
+2018-08-06 06:15:15 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/blouse-neville-10180120239/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/blouse-amadine-60180110026/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/blouses/)
+2018-08-06 06:15:16 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/blouse-amadine-60180110026/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/shirt-abama-60180110018/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/shirts/)
+2018-08-06 06:15:16 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/shirt-abama-60180110018/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/waistcoat-berit-wash-10180120082/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/vests/)
+2018-08-06 06:15:16 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/waistcoat-berit-wash-10180120082/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/shirt-alaina-wash-60180110011/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/shirts/)
+2018-08-06 06:15:16 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/shirt-alaina-wash-60180110011/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/outdoor-jacket-aysha-60180110012/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/outdoor/)
+2018-08-06 06:15:16 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/outdoor-jacket-aysha-60180110012/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-alise-60180110028/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:17 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-alise-60180110028/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-linen/skirts/> (referer: None)
+2018-08-06 06:15:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/outdoor-jaket-brita-wash-10180120099/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/outdoor/)
+2018-08-06 06:15:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-linen/trousers/> (referer: None)
+2018-08-06 06:15:17 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/outdoor-jaket-brita-wash-10180120099/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/outdoor-jacket-belay-wash-10180120057/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/outdoor/)
+2018-08-06 06:15:18 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/outdoor-jacket-belay-wash-10180120057/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/coat-belin-wash-10180120098/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/outdoor/)
+2018-08-06 06:15:18 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/coat-belin-wash-10180120098/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/coat-veranika-10180110016/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/outdoor/)
+2018-08-06 06:15:18 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/coat-veranika-10180110016/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-wiebke-10180120235/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-namira-10180120240/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:18 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-wiebke-10180120235/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:18 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-namira-10180120240/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-cavita-10180120234/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-aasa-60180110015/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:19 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-cavita-10180120234/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:19 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-aasa-60180110015/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-alesha-60180110005/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-auden-60180110003/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:19 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-alesha-60180110005/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:19 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-auden-60180110003/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-alani-60180110002/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-tertia-10180120232/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:20 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-alani-60180110002/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:20 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-tertia-10180120232/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-birga-10180120210/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-bedri-10180120214/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:20 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-birga-10180120210/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:20 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-bedri-10180120214/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-ropa-10180120206/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:21 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-ropa-10180120206/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-brinda-10180120207/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:21 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-brinda-10180120207/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-berna-10180120203/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:21 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-berna-10180120203/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-basha-wash-10180120201/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:21 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-basha-wash-10180120201/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-brinda-wash-10180120197/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-belmira-wash-10180120192/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:22 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-brinda-wash-10180120197/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:22 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-belmira-wash-10180120192/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-belmira-wash-10180120171/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-vaja-10180120186/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:22 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-belmira-wash-10180120171/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:22 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-vaja-10180120186/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-vaja-10180120140/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:23 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-vaja-10180120140/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-bigga-wash-10180120147/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:23 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-bigga-wash-10180120147/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-bienke-wash-10180120130/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-benett-10180120124/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:23 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-bienke-wash-10180120130/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:23 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-benett-10180120124/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-basma-wash-10180120112/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:24 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-basma-wash-10180120112/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-basima-wash-10180120111/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:24 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-basima-wash-10180120111/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-ropa-10180120095/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-biri-10180120093/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:24 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-ropa-10180120095/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:24 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-biri-10180120093/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-bedri-10180120089/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:25 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-bedri-10180120089/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-birga-10180120074/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:25 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-birga-10180120074/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-banu-10180120048/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:25 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-banu-10180120048/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-vaja-10180120034/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:25 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-vaja-10180120034/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jumpsuit-berhta-10180120027/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:26 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jumpsuit-berhta-10180120027/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-veria-10180110011/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:26 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-veria-10180110011/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-vlatka-10180110024/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-vavia-10180110010/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/trousers/)
+2018-08-06 06:15:26 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-vlatka-10180110024/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:26 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-vavia-10180110010/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/shirt-aya-wash-60180110010/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/shirts/)
+2018-08-06 06:15:27 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/shirt-aya-wash-60180110010/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/shirt-ailina-60180110004/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/shirts/)
+2018-08-06 06:15:27 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/shirt-ailina-60180110004/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/shirt-beyla-10180120159/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/shirts/)
+2018-08-06 06:15:27 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/shirt-beyla-10180120159/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/shirt-breana-10180120128/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/shirts/)
+2018-08-06 06:15:28 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/shirt-breana-10180120128/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/shirt-blinka-plissee-10180120105/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/shirts/)
+2018-08-06 06:15:28 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/shirt-blinka-plissee-10180120105/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/shirt-breeja-plissee-10180120103/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/shirts/)
+2018-08-06 06:15:28 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/shirt-breeja-plissee-10180120103/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/shirt-vlera-10180110018/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/shirts/)
+2018-08-06 06:15:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/shirt-belgin-10180120042/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/shirts/)
+2018-08-06 06:15:28 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/shirt-vlera-10180110018/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/shirt-vada-10180110017/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/shirts/)
+2018-08-06 06:15:29 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/shirt-belgin-10180120042/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:29 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/shirt-vada-10180110017/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-burga-wash-10180120224/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/jackets/)
+2018-08-06 06:15:29 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-burga-wash-10180120224/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-biese-wash-10180120199/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/jackets/)
+2018-08-06 06:15:29 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-biese-wash-10180120199/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-byrte-10180120198/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/jackets/)
+2018-08-06 06:15:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-byrte-10180120182/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/jackets/)
+2018-08-06 06:15:29 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-byrte-10180120198/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:29 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-byrte-10180120182/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-bineta-10180120163/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/jackets/)
+2018-08-06 06:15:30 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-bineta-10180120163/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-balbine-10180120113/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/jackets/)
+2018-08-06 06:15:30 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-balbine-10180120113/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-betoul-plissee-10180120109/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/jackets/)
+2018-08-06 06:15:31 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-betoul-plissee-10180120109/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-berka-10180120090/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/jackets/)
+2018-08-06 06:15:31 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-berka-10180120090/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-byrte-10180120100/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/jackets/)
+2018-08-06 06:15:31 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-byrte-10180120100/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-bony-10180120036/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/jackets/)
+2018-08-06 06:15:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-abasi-60180113009/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/knitwear/)
+2018-08-06 06:15:31 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-bony-10180120036/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:31 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-abasi-60180113009/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-adene-10180123009/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/knitwear/)
+2018-08-06 06:15:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-urami-10180113002/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/knitwear/)
+2018-08-06 06:15:32 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-adene-10180123009/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:32 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-urami-10180113002/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/blouse-alameo-60180110025/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/blouses/)
+2018-08-06 06:15:32 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/blouse-alameo-60180110025/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/blouse-akanda-60180110021/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/blouses/)
+2018-08-06 06:15:33 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/blouse-akanda-60180110021/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/blouse-aponi-60180110016/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/blouses/)
+2018-08-06 06:15:33 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/blouse-aponi-60180110016/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/blouse-tallin-10180120228/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/blouses/)
+2018-08-06 06:15:33 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/blouse-tallin-10180120228/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/blouse-babuna-10180120183/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/blouses/)
+2018-08-06 06:15:33 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/blouse-babuna-10180120183/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/blouse-bria-10180120221/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/blouses/)
+2018-08-06 06:15:33 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/blouse-bria-10180120221/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/blouse-brissa-10180120168/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/blouses/)
+2018-08-06 06:15:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/blouse-badia-10180120181/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/blouses/)
+2018-08-06 06:15:34 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/blouse-brissa-10180120168/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:34 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/blouse-badia-10180120181/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/blouse-bereni-10180120152/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/blouses/)
+2018-08-06 06:15:34 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/blouse-bereni-10180120152/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/blouse-bajka-10180120151/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/blouses/)
+2018-08-06 06:15:35 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/blouse-bajka-10180120151/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/blouse-beyla-10180120073/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/blouses/)
+2018-08-06 06:15:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/blouse-beele-10180120053/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/blouses/)
+2018-08-06 06:15:35 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/blouse-beyla-10180120073/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:35 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/blouse-beele-10180120053/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/blouse-baara-10180120047/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/blouses/)
+2018-08-06 06:15:35 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/blouse-baara-10180120047/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/blouse-von-10180110019/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/blouses/)
+2018-08-06 06:15:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-amika-60180110027/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:36 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/blouse-von-10180110019/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:36 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-amika-60180110027/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-birgid-10180120247/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:36 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-birgid-10180120247/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-alale-60180110023/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:36 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-alale-60180110023/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-avy-60180110022/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:36 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-avy-60180110022/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-amrei-60180110014/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:37 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-amrei-60180110014/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-alona-60180110013/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:37 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-alona-60180110013/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-tuyet-10180120230/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-brenna-10180120223/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:37 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-tuyet-10180120230/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:37 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-brenna-10180120223/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-bindu-10180120216/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:38 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-bindu-10180120216/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-behare-10180120209/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:38 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-behare-10180120209/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-bindu-10180120179/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-benja-wash-10180120200/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:38 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-bindu-10180120179/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:38 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-benja-wash-10180120200/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-birgid-10180120174/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:39 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-birgid-10180120174/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-beria-10180120176/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:39 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-beria-10180120176/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-bellamy-10180120162/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:39 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-bellamy-10180120162/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-brixi-10180120167/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:40 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-brixi-10180120167/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-birgid-10180120148/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-briska-10180120141/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:40 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-birgid-10180120148/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:40 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-briska-10180120141/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-bodil-10180120127/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-brenna-10180120092/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:40 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-bodil-10180120127/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:41 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-brenna-10180120092/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-beryll-10180120081/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-benja-10180120071/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:41 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-beryll-10180120081/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:41 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-benja-10180120071/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-belana-wash-10180120068/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-behare-10180120066/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:41 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-belana-wash-10180120068/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:41 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-behare-10180120066/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-bojana-10180120045/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-bex-10180120029/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:42 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-bojana-10180120045/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:42 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-bex-10180120029/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-ulda-10180113003/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/dresses/)
+2018-08-06 06:15:42 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-ulda-10180113003/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/pullover-akela-60180113015/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/pullover/)
+2018-08-06 06:15:42 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/pullover-akela-60180113015/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/pullover-adelis-60180113010/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/pullover/)
+2018-08-06 06:15:43 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/pullover-adelis-60180113010/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/pullover-aswina-60180113007/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/pullover/)
+2018-08-06 06:15:43 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/pullover-aswina-60180113007/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/pullover-adley-60180113005/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/pullover/)
+2018-08-06 06:15:43 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/pullover-adley-60180113005/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/pullover-airam-60180113001/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/pullover/)
+2018-08-06 06:15:44 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/pullover-airam-60180113001/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/pullover-alora-60180113002/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/pullover/)
+2018-08-06 06:15:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/pullover-azada-10180123045/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/pullover/)
+2018-08-06 06:15:44 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/pullover-alora-60180113002/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:44 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/pullover-azada-10180123045/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/pullover-ahnoa-10180123031/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/pullover/)
+2018-08-06 06:15:44 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/pullover-ahnoa-10180123031/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/pullover-ane-10180123028/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/pullover/)
+2018-08-06 06:15:44 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/pullover-ane-10180123028/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/pullover-ayame-10180123021/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/pullover/)
+2018-08-06 06:15:45 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/pullover-ayame-10180123021/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/pullover-uzue-10180113001/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/pullover/)
+2018-08-06 06:15:45 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/pullover-uzue-10180113001/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/top-bikita-plissee-10180120220/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/tops/)
+2018-08-06 06:15:45 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/top-bikita-plissee-10180120220/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/top-baiba-10180120146/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/tops/)
+2018-08-06 06:15:45 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/top-baiba-10180120146/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/bag-azurra-60180114004/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/accessories/)
+2018-08-06 06:15:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/top-brielle-10180120055/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/tops/)
+2018-08-06 06:15:46 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/bag-azurra-60180114004/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:46 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/top-brielle-10180120055/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/scarf-aleas-60180114003/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/accessories/)
+2018-08-06 06:15:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/hat-anjali-60180114001/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/accessories/)
+2018-08-06 06:15:46 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/scarf-aleas-60180114003/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:46 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/hat-anjali-60180114001/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/bag-aniko-10180124018/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/accessories/)
+2018-08-06 06:15:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/scarf-aram-10180124010/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/accessories/)
+2018-08-06 06:15:47 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/bag-aniko-10180124018/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:47 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/scarf-aram-10180124010/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/scarf-aditi-10180124008/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/accessories/)
+2018-08-06 06:15:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/scarf-anbar-10180124007/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/accessories/)
+2018-08-06 06:15:47 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/scarf-aditi-10180124008/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:47 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/scarf-anbar-10180124007/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/scarf-anait-10180124006/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/accessories/)
+2018-08-06 06:15:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/scarf-amar-10180124005/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/accessories/)
+2018-08-06 06:15:47 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/scarf-anait-10180124006/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:48 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/scarf-amar-10180124005/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/scarf-acai-10180124003/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/accessories/)
+2018-08-06 06:15:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-autumn-winter/blouses/> from <GET https://au.oska.com/en/products/shop/oska-autumn-winter/blouses>
+2018-08-06 06:15:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-autumn-winter/boiled-wool/> from <GET https://au.oska.com/en/products/shop/oska-autumn-winter/boiled-wool>
+2018-08-06 06:15:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/scarf-xanti-10180114016/> (referer: https://au.oska.com/en/products/shop/oska-spring-summer/accessories/)
+2018-08-06 06:15:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-autumn-winter/dresses/> from <GET https://au.oska.com/en/products/shop/oska-autumn-winter/dresses>
+2018-08-06 06:15:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-autumn-winter/jackets/> from <GET https://au.oska.com/en/products/shop/oska-autumn-winter/jackets>
+2018-08-06 06:15:48 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://au.oska.com/en/products/shop/ischiko-spring-summer/accessorieshttps://au.oska.com/en/products/shop/ischiko-spring-summer/blouseshttps://au.oska.com/en/products/shop/ischiko-spring-summer/dresseshttps://au.oska.com/en/products/shop/ischiko-spring-summer/jacketshttps://au.oska.com/en/products/shop/ischiko-spring-summer/knitwearhttps://au.oska.com/en/products/shop/ischiko-spring-summer/outdoorhttps://au.oska.com/en/products/shop/ischiko-spring-summer/pulloverhttps://au.oska.com/en/products/shop/ischiko-spring-summer/shirtshttps://au.oska.com/en/products/shop/ischiko-spring-summer/trousershttps://au.oska.com/en/products/shop/oska-autumn-winter/accessories> (referer: None)
+2018-08-06 06:15:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-autumn-winter/knitwear/> from <GET https://au.oska.com/en/products/shop/oska-autumn-winter/knitwear>
+2018-08-06 06:15:48 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/scarf-acai-10180124003/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:48 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/scarf-xanti-10180114016/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:48 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://au.oska.com/en/products/shop/ischiko-spring-summer/accessorieshttps://au.oska.com/en/products/shop/ischiko-spring-summer/blouseshttps://au.oska.com/en/products/shop/ischiko-spring-summer/dresseshttps://au.oska.com/en/products/shop/ischiko-spring-summer/jacketshttps://au.oska.com/en/products/shop/ischiko-spring-summer/knitwearhttps://au.oska.com/en/products/shop/ischiko-spring-summer/outdoorhttps://au.oska.com/en/products/shop/ischiko-spring-summer/pulloverhttps://au.oska.com/en/products/shop/ischiko-spring-summer/shirtshttps://au.oska.com/en/products/shop/ischiko-spring-summer/trousershttps://au.oska.com/en/products/shop/oska-autumn-winter/accessories>: HTTP status code is not handled or not allowed
+2018-08-06 06:15:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-autumn-winter/outdoor/> from <GET https://au.oska.com/en/products/shop/oska-autumn-winter/outdoor>
+2018-08-06 06:15:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-autumn-winter/pullover/> from <GET https://au.oska.com/en/products/shop/oska-autumn-winter/pullover>
+2018-08-06 06:15:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-autumn-winter/shirts/> from <GET https://au.oska.com/en/products/shop/oska-autumn-winter/shirts>
+2018-08-06 06:15:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-autumn-winter/tops/> from <GET https://au.oska.com/en/products/shop/oska-autumn-winter/tops>
+2018-08-06 06:15:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-autumn-winter/skirts/> from <GET https://au.oska.com/en/products/shop/oska-autumn-winter/skirts>
+2018-08-06 06:15:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-autumn-winter/trousers/> from <GET https://au.oska.com/en/products/shop/oska-autumn-winter/trousers>
+2018-08-06 06:15:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/oska-autumn-winter/vests/> from <GET https://au.oska.com/en/products/shop/oska-autumn-winter/vests>
+2018-08-06 06:15:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/ischiko-autumn-winter/accessories/> from <GET https://au.oska.com/en/products/shop/ischiko-autumn-winter/accessories>
+2018-08-06 06:15:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/ischiko-autumn-winter/blouses/> from <GET https://au.oska.com/en/products/shop/ischiko-autumn-winter/blouses>
+2018-08-06 06:15:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-autumn-winter/blouses/> (referer: None)
+2018-08-06 06:15:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-autumn-winter/boiled-wool/> (referer: None)
+2018-08-06 06:15:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-autumn-winter/dresses/> (referer: None)
+2018-08-06 06:15:49 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/ischiko-autumn-winter/dresses/> from <GET https://au.oska.com/en/products/shop/ischiko-autumn-winter/dresses>
+2018-08-06 06:15:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-autumn-winter/jackets/> (referer: None)
+2018-08-06 06:15:49 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/ischiko-autumn-winter/jackets/> from <GET https://au.oska.com/en/products/shop/ischiko-autumn-winter/jackets>
+2018-08-06 06:15:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-autumn-winter/knitwear/> (referer: None)
+2018-08-06 06:15:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-autumn-winter/outdoor/> (referer: None)
+2018-08-06 06:15:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-autumn-winter/pullover/> (referer: None)
+2018-08-06 06:15:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-autumn-winter/shirts/> (referer: None)
+2018-08-06 06:15:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-autumn-winter/skirts/> (referer: None)
+2018-08-06 06:15:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-autumn-winter/tops/> (referer: None)
+2018-08-06 06:15:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-autumn-winter/vests/> (referer: None)
+2018-08-06 06:15:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/oska-autumn-winter/trousers/> (referer: None)
+2018-08-06 06:15:50 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/ischiko-autumn-winter/knitwear/> from <GET https://au.oska.com/en/products/shop/ischiko-autumn-winter/knitwear>
+2018-08-06 06:15:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/ischiko-autumn-winter/accessories/> (referer: None)
+2018-08-06 06:15:50 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/ischiko-autumn-winter/pullover/> from <GET https://au.oska.com/en/products/shop/ischiko-autumn-winter/pullover>
+2018-08-06 06:15:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/ischiko-autumn-winter/blouses/> (referer: None)
+2018-08-06 06:15:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/ischiko-autumn-winter/dresses/> (referer: None)
+2018-08-06 06:15:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/cap-xana-10170714025/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/boiled-wool/)
+2018-08-06 06:15:51 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/cap-xana-10170714025/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/ischiko-autumn-winter/jackets/> (referer: None)
+2018-08-06 06:15:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-varmony-10170710142/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/boiled-wool/)
+2018-08-06 06:15:51 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-varmony-10170710142/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-wuntje-60170713023/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/jackets/)
+2018-08-06 06:15:51 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-wuntje-60170713023/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-wim-60170713012/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/jackets/)
+2018-08-06 06:15:52 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-wim-60170713012/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/coat-venora-10170710102/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/outdoor/)
+2018-08-06 06:15:52 [scrapy.core.scraper] ERROR: Spider error processing <GET https://au.oska.com//en/products/detail/coat-venora-10170710102/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/outdoor/)
+Traceback (most recent call last):
+  File "/Users/alan/anaconda3/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/alan/anaconda3/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/Users/alan/anaconda3/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/alan/anaconda3/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/alan/anaconda3/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/alan/Repos/NIFI/scraper/scraper_backend/scrapy_app/scrapy_app/spiders/oska.py", line 116, in parse_product
+    item['price'] = float(price)
+ValueError: could not convert string to float: '1,019.00'
+2018-08-06 06:15:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/shirt-pomelo-60170710031/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/shirts/)
+2018-08-06 06:15:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/outdoor-jacket-vioma-10170710101/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/outdoor/)
+2018-08-06 06:15:52 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/shirt-pomelo-60170710031/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:52 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/outdoor-jacket-vioma-10170710101/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/shirt-vorine-10170710104/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/shirts/)
+2018-08-06 06:15:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/top-virginie-plissee-10170710160/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/tops/)
+2018-08-06 06:15:52 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/shirt-vorine-10170710104/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:53 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/top-virginie-plissee-10170710160/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/ischiko-autumn-winter/knitwear/> (referer: None)
+2018-08-06 06:15:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/skirt-vanea-10170710063/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/skirts/)
+2018-08-06 06:15:53 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/skirt-vanea-10170710063/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-vamika-10170710224/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/trousers/)
+2018-08-06 06:15:53 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-vamika-10170710224/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/ischiko-autumn-winter/pullover/> (referer: None)
+2018-08-06 06:15:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-vula-10170710223/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/trousers/)
+2018-08-06 06:15:53 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-vula-10170710223/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-vokko-10170710193/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/trousers/)
+2018-08-06 06:15:54 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-vokko-10170710193/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-varuna-wash-10170710170/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/trousers/)
+2018-08-06 06:15:54 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-varuna-wash-10170710170/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-vendla-10170710134/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/trousers/)
+2018-08-06 06:15:54 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-vendla-10170710134/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-ropa-10170710128/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/trousers/)
+2018-08-06 06:15:54 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-ropa-10170710128/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-vavia-10170710125/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/trousers/)
+2018-08-06 06:15:55 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-vavia-10170710125/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-vinusa-10170710113/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/trousers/)
+2018-08-06 06:15:55 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-vinusa-10170710113/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-vokko-wash-10170710100/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/trousers/)
+2018-08-06 06:15:55 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-vokko-wash-10170710100/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-viorella-10170710112/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/trousers/)
+2018-08-06 06:15:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-veerle-10170710078/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/trousers/)
+2018-08-06 06:15:55 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-viorella-10170710112/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:55 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-veerle-10170710078/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-vaja-10170710019/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/trousers/)
+2018-08-06 06:15:56 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-vaja-10170710019/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/trousers-ropa-10170710107/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/trousers/)
+2018-08-06 06:15:56 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/trousers-ropa-10170710107/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jumpsuit-vivit-wash-10170710011/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/trousers/)
+2018-08-06 06:15:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/waistcoat-vutani-10170710005/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/vests/)
+2018-08-06 06:15:56 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jumpsuit-vivit-wash-10170710011/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:56 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/waistcoat-vutani-10170710005/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/pullover-venka-10170710226/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/pullover/)
+2018-08-06 06:15:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/pullover-wunabi-60170710028/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/pullover/)
+2018-08-06 06:15:57 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/pullover-venka-10170710226/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:57 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/pullover-wunabi-60170710028/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/pullover-verose-10170710090/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/pullover/)
+2018-08-06 06:15:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/pullover-vianne-wash-10170710140/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/pullover/)
+2018-08-06 06:15:57 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/pullover-verose-10170710090/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:57 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/pullover-vianne-wash-10170710140/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/coat-visar-10170710023/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/outdoor/)
+2018-08-06 06:15:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/coat-valyn-10170710020/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/outdoor/)
+2018-08-06 06:15:57 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/coat-visar-10170710023/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:58 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/coat-valyn-10170710020/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/coat-veza-10170710017/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/outdoor/)
+2018-08-06 06:15:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/outdoor-jacket-velina-10170710003/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/outdoor/)
+2018-08-06 06:15:58 [scrapy.core.scraper] ERROR: Spider error processing <GET https://au.oska.com//en/products/detail/coat-veza-10170710017/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/outdoor/)
+Traceback (most recent call last):
+  File "/Users/alan/anaconda3/lib/python3.6/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/Users/alan/anaconda3/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/Users/alan/anaconda3/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/Users/alan/anaconda3/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/alan/anaconda3/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/Users/alan/Repos/NIFI/scraper/scraper_backend/scrapy_app/scrapy_app/spiders/oska.py", line 116, in parse_product
+    item['price'] = float(price)
+ValueError: could not convert string to float: '1,069.00'
+2018-08-06 06:15:58 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/outdoor-jacket-velina-10170710003/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/cap-unni-10170713069/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/knitwear/)
+2018-08-06 06:15:58 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/cap-unni-10170713069/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/scarf-uswa-10170713067/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/knitwear/)
+2018-08-06 06:15:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/armstulpen-umida-10170713068/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/knitwear/)
+2018-08-06 06:15:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/scarf-ulka-10170713066/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/knitwear/)
+2018-08-06 06:15:59 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/scarf-uswa-10170713067/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:59 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/armstulpen-umida-10170713068/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:59 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/scarf-ulka-10170713066/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/pullover-umila-10170713062/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/knitwear/)
+2018-08-06 06:15:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/pullover-ulicia-10170713016/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/knitwear/)
+2018-08-06 06:15:59 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/pullover-umila-10170713062/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:59 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:15:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/pullover-ulicia-10170713016/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:15:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/pullover-uyuna-10170713013/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/knitwear/)
+2018-08-06 06:15:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/pullover-uya-10170713014/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/knitwear/)
+2018-08-06 06:16:00 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/pullover-uyuna-10170713013/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:00 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/pullover-uya-10170713014/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/pullover-uletta-10170713009/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/knitwear/)
+2018-08-06 06:16:00 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/pullover-uletta-10170713009/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/scarf-plissee-10170713072/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/knitwear/)
+2018-08-06 06:16:00 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/scarf-plissee-10170713072/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-wosani-60170710025/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/jackets/)
+2018-08-06 06:16:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/pullover-udda-10170713036/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/knitwear/)
+2018-08-06 06:16:00 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-wosani-60170710025/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:01 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/pullover-udda-10170713036/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-urte-10170713046/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/jackets/)
+2018-08-06 06:16:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-unsta-10170713049/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/jackets/)
+2018-08-06 06:16:01 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-urte-10170713046/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:01 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-unsta-10170713049/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-ulani-10170713010/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/jackets/)
+2018-08-06 06:16:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-udele-10170713015/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/jackets/)
+2018-08-06 06:16:01 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-ulani-10170713010/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:01 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-udele-10170713015/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-ullis-10170713003/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/jackets/)
+2018-08-06 06:16:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-vanozza-10170710213/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/jackets/)
+2018-08-06 06:16:02 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-ullis-10170713003/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:02 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-vanozza-10170710213/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-wis-60170713022/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/jackets/)
+2018-08-06 06:16:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-widi-60170713007/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/jackets/)
+2018-08-06 06:16:02 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-wis-60170713022/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:02 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-widi-60170713007/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-wada-60170713001/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/dresses/)
+2018-08-06 06:16:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-unata-10170713050/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/jackets/)
+2018-08-06 06:16:03 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-wada-60170713001/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:03 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-unata-10170713050/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-warja-60170710019/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/dresses/)
+2018-08-06 06:16:03 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-warja-60170710019/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-wandy-60170710010/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/dresses/)
+2018-08-06 06:16:03 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-wandy-60170710010/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-varali-10170710211/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/dresses/)
+2018-08-06 06:16:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-vuscati-plissee-10170710161/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/dresses/)
+2018-08-06 06:16:03 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-varali-10170710211/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:03 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-vuscati-plissee-10170710161/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-vibelia-10170710137/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/dresses/)
+2018-08-06 06:16:04 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-vibelia-10170710137/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-venesha-wash-10170710066/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/dresses/)
+2018-08-06 06:16:04 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-venesha-wash-10170710066/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/dress-valene-10170710041/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/dresses/)
+2018-08-06 06:16:04 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/dress-valene-10170710041/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-virsi-10170710091/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/boiled-wool/)
+2018-08-06 06:16:04 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-virsi-10170710091/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/pullover-viu-10170710073/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/boiled-wool/)
+2018-08-06 06:16:05 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/pullover-viu-10170710073/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/waistcoat-viveka-10170710050/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/boiled-wool/)
+2018-08-06 06:16:05 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/waistcoat-viveka-10170710050/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/coat-valina-10170710034/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/boiled-wool/)
+2018-08-06 06:16:05 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/coat-valina-10170710034/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-valea-10170710032/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/boiled-wool/)
+2018-08-06 06:16:05 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-valea-10170710032/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-vilana-10170710025/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/boiled-wool/)
+2018-08-06 06:16:06 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-vilana-10170710025/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/jacket-vundi-10170710030/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/boiled-wool/)
+2018-08-06 06:16:06 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/jacket-vundi-10170710030/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/blouse-winara-60170710023/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/blouses/)
+2018-08-06 06:16:06 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/blouse-winara-60170710023/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/blouse-wateya-60170710020/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/blouses/)
+2018-08-06 06:16:06 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/blouse-wateya-60170710020/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/blouse-von-10170710203/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/blouses/)
+2018-08-06 06:16:06 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/blouse-von-10170710203/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/blouse-vlora-10170710180/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/blouses/)
+2018-08-06 06:16:07 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/blouse-vlora-10170710180/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/blouse-variola-10170710146/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/blouses/)
+2018-08-06 06:16:07 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/blouse-variola-10170710146/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:07 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/ischiko-autumn-winter/trousers/> from <GET https://au.oska.com/en/products/shop/ischiko-autumn-winter/trousers>
+2018-08-06 06:16:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/blouse-vunja-10170710013/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/blouses/)
+2018-08-06 06:16:07 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://au.oska.com/en/products/shop/ischiko-autumn-winter/shirts/> from <GET https://au.oska.com/en/products/shop/ischiko-autumn-winter/shirts>
+2018-08-06 06:16:07 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/blouse-vunja-10170710013/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com//en/products/detail/blouse-vundisa-10170710109/> (referer: https://au.oska.com/en/products/shop/oska-autumn-winter/blouses/)
+2018-08-06 06:16:07 [scrapy_app.pipelines] DEBUG: TEST
+2018-08-06 06:16:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://au.oska.com//en/products/detail/blouse-vundisa-10170710109/>
+668d48d6-eb7f-4e13-961b-73f61297ee9f
+2018-08-06 06:16:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/ischiko-autumn-winter/trousers/> (referer: None)
+2018-08-06 06:16:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://au.oska.com/en/products/shop/ischiko-autumn-winter/shirts/> (referer: None)
+2018-08-06 06:16:08 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-08-06 06:16:08 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 126984,
+ 'downloader/request_count': 292,
+ 'downloader/request_method_count/GET': 292,
+ 'downloader/response_bytes': 1649900,
+ 'downloader/response_count': 292,
+ 'downloader/response_status_count/200': 252,
+ 'downloader/response_status_count/301': 38,
+ 'downloader/response_status_count/404': 2,
+ 'dupefilter/filtered': 83,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 8, 6, 6, 16, 8, 65014),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/404': 1,
+ 'item_scraped_count': 212,
+ 'log_count/DEBUG': 718,
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 8,
+ 'memusage/max': 71737344,
+ 'memusage/startup': 71737344,
+ 'request_depth_max': 1,
+ 'response_received_count': 254,
+ 'scheduler/dequeued': 291,
+ 'scheduler/dequeued/memory': 291,
+ 'scheduler/enqueued': 291,
+ 'scheduler/enqueued/memory': 291,
+ 'spider_exceptions/ValueError': 2,
+ 'start_time': datetime.datetime(2018, 8, 6, 6, 15, 8, 550451)}
+2018-08-06 06:16:08 [scrapy.core.engine] INFO: Spider closed (finished)

@@ -1,0 +1,1742 @@
+2018-08-14 00:25:08 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: scrapy_app)
+2018-08-14 00:25:08 [scrapy.utils.log] INFO: Versions: lxml 4.1.0.0, libxml2 2.9.4, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.3 |Anaconda, Inc.| (default, Oct  6 2017, 12:04:38) - [GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 17.2.0 (OpenSSL 1.0.2l  25 May 2017), cryptography 2.0.3, Platform Darwin-17.7.0-x86_64-i386-64bit
+2018-08-14 00:25:08 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'scrapy_app', 'LOG_FILE': 'logs/default/loverthelabel_products/79121af09f5811e8bc57787b8aaf50bd.log', 'NEWSPIDER_MODULE': 'scrapy_app.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['scrapy_app.spiders'], 'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'}
+2018-08-14 00:25:08 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-08-14 00:25:08 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-08-14 00:25:08 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-14 00:25:08 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_app.pipelines.ScrapyAppPipeline']
+2018-08-14 00:25:08 [scrapy.core.engine] INFO: Spider opened
+2018-08-14 00:25:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-14 00:25:08 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6025
+2018-08-14 00:25:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/robots.txt> (referer: None)
+2018-08-14 00:25:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses?page=1> (referer: None)
+2018-08-14 00:25:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses?page=4> (referer: None)
+2018-08-14 00:25:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/tops?page=1> (referer: None)
+2018-08-14 00:25:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/tops?page=2> (referer: None)
+2018-08-14 00:25:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/skirt?page=1> (referer: None)
+2018-08-14 00:25:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses?page=3> (referer: None)
+2018-08-14 00:25:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses?page=2> (referer: None)
+2018-08-14 00:25:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/ss18-peony-mini-flip-dress-navy> (referer: https://www.loverthelabel.com/collections/dresses?page=1)
+2018-08-14 00:25:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/ss18-foulard-mini-dress> (referer: https://www.loverthelabel.com/collections/dresses?page=1)
+2018-08-14 00:25:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/ss18-peony-mini-flip-dress-bone> (referer: https://www.loverthelabel.com/collections/dresses?page=1)
+2018-08-14 00:25:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/ss18-petal-flip-dress-black> (referer: https://www.loverthelabel.com/collections/dresses?page=1)
+2018-08-14 00:25:11 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:11 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Lover-SS18-Peony-Mini-Flip-Dress-Navy_7.jpg?v=1532490773 HTTP/1.1" 200 199547
+2018-08-14 00:25:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/ss18-peony-mini-flip-dress-navy>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (86, 93, 107, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Mini-Flip-Dress-Navy_7.jpg?v=1532490773',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Mini-Flip-Dress-Navy_2.jpg?v=1532490773',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Mini-Flip-Dress-Navy_1.jpg?v=1532490773',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Mini-Flip-Dress-Navy_3.jpg?v=1532490773',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Mini-Flip-Dress-Navy_4.jpg?v=1532490773',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Mini-Flip-Dress-Navy_5.jpg?v=1532490773',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Mini-Flip-Dress-Navy_6.jpg?v=1532490773'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/ss18-peony-mini-flip-dress-navy',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Peony Mini Flip Dress',
+ 'price': '395.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Peony Mini Flip Dress is a digitally printed signature Lover '
+           'double knit stretch dress.\xa0 Featuring an exclusive custom '
+           'vintage peony wallpaper digital print, fit and flare skirt, long '
+           'sleeves, and classic round neckline. Dress is unlined.',
+           'Available in Navy and Bone.',
+           'The Peony Mini Flip Dress is from our Spring Summer collection, '
+           'Rhapsody.\xa0',
+           'Fabrication:\xa0',
+           'Care:',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           'Find out more about '],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/ss18-midsummer-silk-midi-dress-black> (referer: https://www.loverthelabel.com/collections/dresses?page=1)
+2018-08-14 00:25:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/ss18-peony-satin-shirt-dress-navy> (referer: https://www.loverthelabel.com/collections/dresses?page=1)
+2018-08-14 00:25:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/ss18-peony-satin-mini-dress-bone> (referer: https://www.loverthelabel.com/collections/dresses?page=1)
+2018-08-14 00:25:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/ss18-rhapsody-midi-dress> (referer: https://www.loverthelabel.com/collections/dresses?page=1)
+2018-08-14 00:25:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/ss18-rhapsody-mini-dress> (referer: https://www.loverthelabel.com/collections/dresses?page=1)
+2018-08-14 00:25:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/ss18-petal-flip-dress-red> (referer: https://www.loverthelabel.com/collections/dresses?page=1)
+2018-08-14 00:25:11 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:11 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Lover-SS18-Foulard-Mini-Dress-Black_1.jpg?v=1531800290 HTTP/1.1" 200 72960
+2018-08-14 00:25:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/ss18-foulard-mini-dress>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (157, 145, 141, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Foulard-Mini-Dress-Black_1.jpg?v=1531800290',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Foulard-Mini-Dress-Black_7.jpg?v=1531800299',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Foulard-Mini-Dress-Black_2.jpg?v=1531800306',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Foulard-Mini-Dress-Black_3.jpg?v=1531800312',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Foulard-Mini-Dress-Black_4.jpg?v=1531800348',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Foulard-Mini-Dress-Black_5.jpg?v=1531800353',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Foulard-Mini-Dress-Black_6.jpg?v=1531800361'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/ss18-foulard-mini-dress',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Foulard Mini Dress',
+ 'price': '450.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Foulard Mini Dress is a sweet long sleeve mini dress made from '
+           'soft matte viscose with an exclusively designed foulard print. '
+           'Featuring feminine twist knot at waist, button keyhole neck, bow '
+           'wrist detailing, subtle eyelet trim, fit and flare skirt, and '
+           'classic round neckline.',
+           'The Foulard Mini Dress is from our Spring Summer collection, '
+           'Rhapsody.',
+           'Fabrication:\xa0',
+           'Care:',
+           '\xa0(P)',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           'Find out more about '],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:12 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:12 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/S18_July.jpg?v=1532585301 HTTP/1.1" 200 88885
+2018-08-14 00:25:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/ss18-peony-mini-flip-dress-bone>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (227, 218, 213, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July.jpg?v=1532585301',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RHAPSODY_Ghost_b_3.jpg?v=1532585301',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July3.jpg?v=1532585301',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July2.jpg?v=1532585301',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July4.jpg?v=1532585301',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July5.jpg?v=1532585301'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/ss18-peony-mini-flip-dress-bone',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Peony Mini Flip Dress',
+ 'price': '395.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Peony Mini Flip Dress is a digitally printed signature Lover '
+           'double knit stretch dress.\xa0 Featuring an exclusive custom '
+           'vintage peony wallpaper digital print, fit and flare skirt, long '
+           'sleeves, and classic round neckline. Dress is unlined.',
+           'Available in Navy and Bone.',
+           'The Peony Mini Flip Dress is from our Spring Summer collection, '
+           'Rhapsody.\xa0',
+           'Fabrication:\xa0',
+           'Care:',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           'Find out more about '],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:12 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:12 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/S18_AUG.jpg?v=1533793248 HTTP/1.1" 200 87056
+2018-08-14 00:25:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/ss18-petal-flip-dress-black>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (155, 145, 140, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/S18_AUG.jpg?v=1533793248',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RHAPSODY_Ghost_b_17.jpg?v=1533793248',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_AUG2.jpg?v=1533793248',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_AUG3.jpg?v=1533793248',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_AUG6.jpg?v=1533793248',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_AUG4.jpg?v=1533793248',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_AUG5.jpg?v=1533793248'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/ss18-petal-flip-dress-black',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Petal Flip Dress',
+ 'price': '495.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Petal flip Dress is a modern lace mini dress, featuring '
+           'signature scallop lace placement over bust, creating a flattering '
+           'sweetheart neckline. Classic Long Sleeves, fit and flare skirt and '
+           'is fully lined with mechanical stretch lining for comfort. The '
+           'Petal Flip Dress is from our Spring Summer 2018 Collection, '
+           'Rhapsody.',
+           'Available in Red and Black.\xa0',
+           'is from our Autumn Winter 2018 collection, GRACE.',
+           'Fabrication: 45% Cotton 30% Nylon 25% Viscose',
+           'Care: Delicate Professional Dry Cleaning Only. (P)',
+           '[description_1]',
+           'The Petal flip Dress is a modern lace mini dress, featuring '
+           'signature scallop lace placement over bust, creating a flattering '
+           'sweetheart neckline. Classic Long Sleeves, fit and flare skirt and '
+           'is fully lined with mechanical stretch lining for comfort. The '
+           'Petal Flip Dress is from our Spring Summer 2018 Collection, '
+           'Rhapsody.',
+           'Available in Red and Black.\xa0',
+           'is from our Autumn Winter 2018 collection, GRACE.',
+           'Fabrication: 45% Cotton 30% Nylon 25% Viscose',
+           'Care: Delicate Professional Dry Cleaning Only. (P)',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           "Find out more about Lover's Measurement Guide\xa0"],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/ss18-foulard-midi-dress> (referer: https://www.loverthelabel.com/collections/dresses?page=1)
+2018-08-14 00:25:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/tops/products/aw18-abbey-trim-shirt-1> (referer: https://www.loverthelabel.com/collections/tops?page=1)
+2018-08-14 00:25:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/ss18-midsummer-silk-mini-dress-black> (referer: https://www.loverthelabel.com/collections/dresses?page=1)
+2018-08-14 00:25:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/tops/products/aw18-lover-embroidered-sweat-3> (referer: https://www.loverthelabel.com/collections/tops?page=1)
+2018-08-14 00:25:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/tops/products/aw18-trinity-top-white> (referer: https://www.loverthelabel.com/collections/tops?page=1)
+2018-08-14 00:25:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/tops/products/ss18-chunky-knit-navy> (referer: https://www.loverthelabel.com/collections/tops?page=1)
+2018-08-14 00:25:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/rm-halo-hanky-dress> (referer: https://www.loverthelabel.com/collections/dresses?page=2)
+2018-08-14 00:25:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/rm-halo-sheath-dress> (referer: https://www.loverthelabel.com/collections/dresses?page=2)
+2018-08-14 00:25:13 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:13 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Lover-SS18-Midsummer_silk_midi_black-1.jpg?v=1533526228 HTTP/1.1" 200 132941
+2018-08-14 00:25:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/ss18-midsummer-silk-midi-dress-black>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (189, 179, 174, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Midsummer_silk_midi_black-1.jpg?v=1533526228',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Midsummer_silk_midi_black-7.jpg?v=1533526228',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Midsummer_silk_midi_black-2.jpg?v=1533526228',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Midsummer_silk_midi_black-3.jpg?v=1533526228',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Midsummer_silk_midi_black-4.jpg?v=1533526228',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Midsummer_silk_midi_black-5.jpg?v=1533526228',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Midsummer_silk_midi_black-6.jpg?v=1533526228'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/ss18-midsummer-silk-midi-dress-black',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Midsummer Silk Midi Dress',
+ 'price': '695.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['\xa0The Midsummer Silk Midi Dress is a signature floaty midi '
+           'dress, made from Mommy Silk Crinkle. Featuring custom vintage '
+           'digital wallpaper print exclusive to Lover, a v-neckline, ribbon '
+           'tie at back of neck, Nickle hardware cord ends, double Georgette '
+           'lining, ruffle emperial waistline, contrast hem with movement at '
+           'skirt that dance around the body as you move.',
+           'The Midsummer Silk Midi Dress is from our Spring Summer 2018 '
+           'collection, Rhapsody.\xa0',
+           'Fabrication:\xa0\xa0100% Silk',
+           'Care: Due to the Delicate nature of silk fabric, please take care '
+           'of jewellery and handling. Any irregularities in colour and weave '
+           'are natural characteristics of this fabric.\xa0',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           'Find out more about'],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:13 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:13 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/S18_July15.jpg?v=1532585304 HTTP/1.1" 200 99071
+2018-08-14 00:25:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/ss18-peony-satin-shirt-dress-navy>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (168, 160, 161, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July15.jpg?v=1532585304',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RHAPSODY_Ghost_b_28.jpg?v=1532499457',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July16.jpg?v=1532585304',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July17.jpg?v=1532585304',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July18.jpg?v=1532585304',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July19.jpg?v=1532585304'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/ss18-peony-satin-shirt-dress-navy',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Peony Satin Shirt Dress',
+ 'price': '550.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Peony Satin Shirt Dress is a modern but feminine shirt dress '
+           'made from printed heavy viscose satin. Featuring a custom vintage '
+           'peony wallpaper digital print exclusive to Lover, cuff ties, full '
+           'length placket down centre front, round neckline and a banded '
+           'collar. Complete with removable nickel D-ring waist belt and a '
+           'frilled flared hem.',
+           'The Peony Satin Shirt Dress is from our Spring Summer 2018 '
+           'collection, Rhapsody. a',
+           'Fabrication:\xa0',
+           'Care:',
+           '. (P)',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           'Find out more about '],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:13 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:13 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/S18_July7.jpg?v=1532585302 HTTP/1.1" 200 80907
+2018-08-14 00:25:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/ss18-peony-satin-mini-dress-bone>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (226, 214, 207, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July7.jpg?v=1532585302',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RHAPSODY_Ghost_b.jpg?v=1532499442',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July8.jpg?v=1532585302',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July9.jpg?v=1532585302',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July10.jpg?v=1532585302',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July11.jpg?v=1532585302',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July12.jpg?v=1532585302',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July13.jpg?v=1532585302',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July14.jpg?v=1532585302'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/ss18-peony-satin-mini-dress-bone',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Peony Satin Mini Dress',
+ 'price': '495.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Peony Satin Mini Dress is a versatile belted heavy viscose '
+           'satin mini-length dress. Featuring a custom vintage peony '
+           'wallpaper digital print exclusive to Lover, attached nickel D-ring '
+           'waist belt, wrap look skirt and flare sleeve. Garment is unlined.',
+           'Available in Navy and Bone.',
+           'The Peony satin mini dress is from our Spring Summer 2018 '
+           'collection, Rhapsody.\xa0',
+           'Fabrication:\xa0',
+           'Care:',
+           '. (P)',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           'Find out more about '],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:14 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:14 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/S18_July13_4c79e4c6-3a5b-47d4-b7c9-2d21ae340712.jpg?v=1532501789 HTTP/1.1" 200 145817
+2018-08-14 00:25:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/ss18-rhapsody-midi-dress>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (124, 120, 125, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July13_4c79e4c6-3a5b-47d4-b7c9-2d21ae340712.jpg?v=1532501789',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RHAPSODY_Ghost_b_20.jpg?v=1532501789',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July9_18fc12f7-0707-4650-ae19-e992ca1ce6d6.jpg?v=1532501789',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July10_47fda196-f755-4276-82ec-d3a2c36aaaaf.jpg?v=1532501789',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July11_e5c32805-b703-4775-8ddf-12f8af09134c.jpg?v=1532501789',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July12_063c390a-73ca-483b-a974-de33da249c98.jpg?v=1532501789',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July14_753f49a6-6b58-4193-a9c7-af59341c54fe.jpg?v=1532501789',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July15_e4410cc6-43fe-48d2-aa4c-edb068a552be.jpg?v=1532501789',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July16_e19f91bc-d2b4-4840-b43d-71df505c371a.jpg?v=1532501789'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/ss18-rhapsody-midi-dress',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Rhapsody Midi Dress',
+ 'price': '695.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Rhapsody Midi Dress is from our Spring Summer 2018 collection, '
+           'Rhapsody. and is exclusive to our Lover Online and '
+           'Boutiques.\xa0 \xa0',
+           'Fabrication: 100%\xa0Polyester',
+           'Care: Delicate Professional Dry Cleaning Only. (P)',
+           'The Rhapsody Midi Dress is a sophisticated fitted midi-length '
+           'dress made from guipure lace. Featuring signature Lover '
+           'symmetrical lace placement, an elevated blouson sleeve, lace '
+           'banded cuff and raised neck. Skirt of dress flares and falls '
+           'elegantly from hip to finish at calf.\xa0 Body of garment has '
+           'mechanical stretch lining for comfort.',
+           'The Rhapsody Midi Dress is from our Spring Summer 2018 collection, '
+           'Rhapsody. and is exclusive to our Lover Online and '
+           'Boutiques.\xa0 \xa0',
+           'Fabrication: 100%\xa0Polyester',
+           'Care: Delicate Professional Dry Cleaning Only. (P)',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           'Find out more about '],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:14 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:14 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/S18_July3_6c0390c9-59c4-439b-bdb5-0b89cbd72642.jpg?v=1532585307 HTTP/1.1" 200 128757
+2018-08-14 00:25:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/ss18-rhapsody-mini-dress>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (137, 128, 131, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July3_6c0390c9-59c4-439b-bdb5-0b89cbd72642.jpg?v=1532585307',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RHAPSODY_Ghost_b_19.jpg?v=1532502717',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July2_fe907a57-33a0-4760-8ce0-0782203b789c.jpg?v=1532585307',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July_f7ebe415-6e37-4fc9-8bce-13f21d31cd7e.jpg?v=1532585307',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July4_6b752c67-2b6d-4ceb-9787-595411f62cf2.jpg?v=1532585307',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July5_de68b582-c6c0-4322-a7bb-1ee897ea5bb2.jpg?v=1532585307',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July6.jpg?v=1532585307',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July7_3295de58-621b-48ca-8f8d-c5b16229b3d7.jpg?v=1532585307',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/S18_July8_ecc51f2a-818f-4893-8660-415de291b107.jpg?v=1532585307'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/ss18-rhapsody-mini-dress',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Rhapsody Mini Dress',
+ 'price': '595.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Rhapsody Mini Dress is an elegant mini-length dress made from '
+           'guipure Lace. Featuring signature lover symmetrical lace '
+           'placement, an elevated blouson sleeve, lace banded cuff and fit '
+           'and flare mini skirt. Body of garment has mechanical stretch '
+           'lining for comfort.',
+           'The Rhapsody Mini Dress is from our Spring Summer 2018 collection, '
+           'Rhapsody.\xa0',
+           'Fabrication: 100%\xa0Polyester',
+           'Care: Delicate Professional Dry Cleaning Only. (P)',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           'Find out more about '],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:15 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:15 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Lover-SS18-Petal_Flip_mini_red-1.jpg?v=1533614229 HTTP/1.1" 200 103530
+2018-08-14 00:25:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/ss18-petal-flip-dress-red>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (232, 147, 142, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Petal_Flip_mini_red-1.jpg?v=1533614229',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Petal_Flip_mini_red-7.jpg?v=1533614229',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Petal_Flip_mini_red-2.jpg?v=1533614229',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Petal_Flip_mini_red-3.jpg?v=1533614229',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Petal_Flip_mini_red-4.jpg?v=1533614229',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Petal_Flip_mini_red-5.jpg?v=1533614229',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Petal_Flip_mini_red-6.jpg?v=1533614229'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/ss18-petal-flip-dress-red',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Petal Flip Dress',
+ 'price': '495.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Petal flip Dress is a modern lace mini dress, featuring '
+           'signature scallop lace placement over bust, creating a flattering '
+           'sweetheart neckline. Classic Long Sleeves, fit and flare skirt and '
+           'is fully lined with mechanical stretch lining for comfort. The '
+           'Petal Flip Dress is from our Spring Summer 2018 Collection, '
+           'Rhapsody.',
+           'Available in Red and Black.\xa0',
+           ' is from our Autumn Winter 2018 collection, GRACE.',
+           'Fabrication: 45% Cotton 30% Nylon 25% Viscose',
+           'Care: Delicate Professional Dry Cleaning Only. (P)',
+           '[description_1]',
+           'The Petal flip Dress is a modern lace mini dress, featuring '
+           'signature scallop lace placement over bust, creating a flattering '
+           'sweetheart neckline. Classic Long Sleeves, fit and flare skirt and '
+           'is fully lined with mechanical stretch lining for comfort. The '
+           'Petal Flip Dress is from our Spring Summer 2018 Collection, '
+           'Rhapsody.',
+           'Available in Red and Black.\xa0',
+           ' is from our Autumn Winter 2018 collection, GRACE.',
+           'Fabrication: 45% Cotton 30% Nylon 25% Viscose',
+           'Care: Delicate Professional Dry Cleaning Only. (P)',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           "Find out more about Lover's Measurement Guide\xa0"],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/rm-libra-midi-dress-2> (referer: https://www.loverthelabel.com/collections/dresses?page=2)
+2018-08-14 00:25:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/rm-poppy-fit-and-flare> (referer: https://www.loverthelabel.com/collections/dresses?page=2)
+2018-08-14 00:25:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/rm-worship-dress-4> (referer: https://www.loverthelabel.com/collections/dresses?page=2)
+2018-08-14 00:25:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/rm-grace-dress-2> (referer: https://www.loverthelabel.com/collections/dresses?page=2)
+2018-08-14 00:25:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/aw18-posy-georgette-slip-dress> (referer: https://www.loverthelabel.com/collections/dresses?page=2)
+2018-08-14 00:25:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/posy-satin-dress-bluerose> (referer: https://www.loverthelabel.com/collections/dresses?page=2)
+2018-08-14 00:25:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/aw182posysatinminidress> (referer: https://www.loverthelabel.com/collections/dresses?page=2)
+2018-08-14 00:25:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/ss18-peony-ggt-midi-dress> (referer: https://www.loverthelabel.com/collections/dresses?page=2)
+2018-08-14 00:25:15 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:15 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Lover-SS18-Foulard-Midi-Dress-Black_1.jpg?v=1531800231 HTTP/1.1" 200 83833
+2018-08-14 00:25:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/ss18-foulard-midi-dress>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (107, 98, 98, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Foulard-Midi-Dress-Black_1.jpg?v=1531800231',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Foulard-Midi-Dress-Black_6.jpg?v=1531800240',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Foulard-Midi-Dress-Black_2.jpg?v=1531800247',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Foulard-Midi-Dress-Black_3.jpg?v=1531800257',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Foulard-Midi-Dress-Black_4.jpg?v=1531800264',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Foulard-Midi-Dress-Black_5.jpg?v=1531800274'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/ss18-foulard-midi-dress',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Foulard Midi Dress',
+ 'price': '495.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Foulard Midi Dress is an elegant midi-length dress made from '
+           'soft matte viscose with an exclusively designed foulard print. '
+           'Featuring feminine twist knot at waist, sweet subtle eyelet trim, '
+           'button keyhole neck, flared sleeve and splice at front hem. '
+           'Garment is unlined.',
+           'The Foulard Midi Dress is from our Spring Summer 2018 collection, '
+           'Rhapsody.',
+           'Fabrication:\xa0',
+           'Care:',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           'Find out more about '],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:16 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:16 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/AW18_feb7.jpg?v=1525314285 HTTP/1.1" 200 89898
+2018-08-14 00:25:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/tops/products/aw18-abbey-trim-shirt-1>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (180, 169, 169, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_feb7.jpg?v=1525314285',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_feb12.jpg?v=1525314285',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/GRACE_Ghost_closeups9_51f86208-d630-4360-8a35-43ffd077a3fb.jpg?v=1525314285',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_feb10.jpg?v=1525314285',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_feb9.jpg?v=1525314285',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_feb8.jpg?v=1525314285',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_feb11.jpg?v=1525314285'],
+ 'item_type': ['tops'],
+ 'link': 'https://www.loverthelabel.com/collections/tops/products/aw18-abbey-trim-shirt-1',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Abbey Trim Shirt',
+ 'price': '118.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Abbey Trim Dress is a poplin cotton, featuring a subtle stripe '
+           'hue, a Medici-Imperial style collar, spliced lace centre front '
+           'inserts, ¾ balloon sleeve with ruffle button cuff and a peplum '
+           'hem.',
+           'The Abbey Trim\xa0Shirt is from our Autumn Winter 2018 collection, '
+           'GRACE.',
+           'Fabrication: 100% Cotton',
+           'Care: Cold Hand Wash, Wash Separately, Dry Cleanable (P). Do not '
+           'Wring Soak or Bleach. Cool Iron with a Pressing Cloth.',
+           'Fit Notes: Style this shirt with the Legacy Mini Skirt in Navy.',
+           '\n            ',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           "Find out more about Lover's Measurement Guide H"],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:16 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:16 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Lover-SS18-Midsummer_silk_mini_black-1.jpg?v=1533614238 HTTP/1.1" 200 119761
+2018-08-14 00:25:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/ss18-midsummer-silk-mini-dress-black>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (192, 180, 174, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Midsummer_silk_mini_black-1.jpg?v=1533614238',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Midsummer_silk_mini_black-2.jpg?v=1533614238',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Midsummer_silk_mini_black-3.jpg?v=1533614238',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Midsummer_silk_mini_black-4.jpg?v=1533614238',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Midsummer_silk_mini_black-5.jpg?v=1533614238',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Midsummer_silk_mini_black-6.jpg?v=1533614238',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Midsummer_silk_mini_black-7.jpg?v=1533614238'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/ss18-midsummer-silk-mini-dress-black',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Midsummer Silk Mini Dress',
+ 'price': '595.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Midsummer Silk Mini Dress is a signature floaty and playful '
+           'mini dress made from Mommy Silk Crinkle. Featuring custom vintage '
+           'digital wallpaper print exclusive to Lover. Classic V-Neckline, '
+           'ruffle empire waistline, corded gathers at shoulder, key hole '
+           'button closure at back, nickle hardware cord ends, Cornet sleeves, '
+           'double Georgette lining and contrast hem with movement that dance '
+           'around the body as you move.',
+           'The Midsummer Silk Mini Dress is from our Spring Summer 2018 '
+           'collection, Rhapsody.\xa0',
+           'Fabrication:\xa0\xa0100% Silk',
+           'Care: Due to the Delicate nature of silk fabric, please take care '
+           'of jewellery and handling. Any irregularities in colour and weave '
+           'are natural characteristics of this fabric.\xa0',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           'Find out more about'],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:17 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:17 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Grace_ghost170905_33.jpg?v=1521677558 HTTP/1.1" 200 106421
+2018-08-14 00:25:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/tops/products/aw18-lover-embroidered-sweat-3>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (198, 199, 201, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Grace_ghost170905_33.jpg?v=1521677558'],
+ 'item_type': ['tops'],
+ 'link': 'https://www.loverthelabel.com/collections/tops/products/aw18-lover-embroidered-sweat-3',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Lover Embroidered Sweat',
+ 'price': '159.0',
+ 'sizes': ['XS', 'S', 'M', 'L'],
+ 'stock': True,
+ 'style': ['The Lover Embroidered Crew is made from a cotton loop back terry. '
+           'Featuring a classic crew neck, long raglan sleeves, ribbed cuff, '
+           "Iconic ' Black Rose Army' Motif which first appeared in Lover "
+           '2006, a constant symbol of beauty and deception.\xa0',
+           'Fabrication: 100% Cotton',
+           'Care: Gentle Cold Hand Wash, Dry flat in shade. Dry Cleanable.',
+           'Size S fits 8-10, M fits 10-12. Can size up is a more relaxed fit '
+           'is desired.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           "Find out more about Lover's Measurement Guide\xa0"],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:17 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:17 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/AW18_April19_31.jpg?v=1525313932 HTTP/1.1" 200 145077
+2018-08-14 00:25:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/tops/products/aw18-trinity-top-white>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (185, 181, 178, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_April19_31.jpg?v=1525313932',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_April19_36.jpg?v=1525313932',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_April19_34.jpg?v=1525313932',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_April19_35.jpg?v=1525313932',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_April19_32.jpg?v=1525313932',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_April19_33.jpg?v=1525313932'],
+ 'item_type': ['tops'],
+ 'link': 'https://www.loverthelabel.com/collections/tops/products/aw18-trinity-top-white',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Trinity Top',
+ 'price': '128.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Trinity Top is a classic Balkan blouse made from a soft to '
+           'touch cotton. Featuring lace cuffs, 3/4 balloon sleeve, signature '
+           'lace placement and designed to be relaxed and offers a classic '
+           'round neckline.\xa0',
+           'is from our Autumn Winter 2018 collection, GRACE.',
+           'Fabrication:100%\xa0Cotton (Lace Trim: 100% Polyester)',
+           'Care: Cold Hand Wash Separately, Do not wring, Soak or Bleach. '
+           'Cool iron with a Pressing Cloth, Dry Cleanable (P).\xa0',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           "Find out more about Lover's Measurement Guide\xa0"],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:17 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:17 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Lover-SS18-Chunky-Knit-Navy_1.jpg?v=1531799792 HTTP/1.1" 200 77238
+2018-08-14 00:25:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/tops/products/ss18-chunky-knit-navy>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (150, 147, 157, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Chunky-Knit-Navy_1.jpg?v=1531799792',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Chunky-Knit-Navy_7.jpg?v=1534058486',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Chunky-Knit-Navy_2.jpg?v=1531799842',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Chunky-Knit-Navy_3.jpg?v=1531799850',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Chunky-Knit-Navy_4.jpg?v=1531799859',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Chunky-Knit-Navy_5.jpg?v=1531799866',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Chunky-Knit-Navy_6.jpg?v=1531799874'],
+ 'item_type': ['tops'],
+ 'link': 'https://www.loverthelabel.com/collections/tops/products/ss18-chunky-knit-navy',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Chunky Knit',
+ 'price': '395.0',
+ 'sizes': ['XS', 'S', 'M', 'L'],
+ 'stock': True,
+ 'style': ['The Chunky Knit is a heavy cable knit made from a three-gauge '
+           'smooth cotton-blend yarn. Featuring a modern cocoon sleeve with an '
+           'oversized cable design, high turtle neck and a loose silhouette.',
+           'Available in Navy and Ivory.',
+           'The Chunky Knit is from our Spring Summer 2018 collection, '
+           'Rhapsody.\xa0',
+           'Fabrication:\xa0',
+           '75% Cotton',
+           '25% Nylon',
+           'Care:',
+           'Please take care with Jewellry and handling to avoid pulling or '
+           'snagging. Cold Hand Wash or Gentle Machine Wash Separately, Do not '
+           'Bleach, Rub or Soak. Do Not Tumble Dry. Cool iron on Reverse, '
+           'Reshape whilst damp. Dry Flat in Shade, Dry Cleanable. (P)',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           'Find out more about '],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:18 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:18 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/RedMagick_7.jpg?v=1526886945 HTTP/1.1" 200 482055
+2018-08-14 00:25:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/rm-halo-hanky-dress>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(1570205, (231, 130, 128, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_7.jpg?v=1526886945',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_11.jpg?v=1526886945',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_8.jpg?v=1526886945',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_9.jpg?v=1526886945',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_10.jpg?v=1526886945',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_12.jpg?v=1526886945'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/rm-halo-hanky-dress',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Halo Hanky Dress',
+ 'price': '795.0',
+ 'sizes': ['4', '6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['Delicate French corded lace compliments this contrasting, Elegant '
+           'dress. Featuring\xa0a round neckline, set-in sleeve and scallop\xa0'
+           'detailed hanky\xa0hem.',
+           'Fabrication: 70% Cotton 15% Viscose 15% Polyamide. Lining: 100% '
+           'Polyester.',
+           'Care: Quality Dry Clean Only.',
+           'Fit Notes: Features an above the knee Hanky skirt and is fitted at '
+           'waist.',
+           'Alterations: Length can be altered with care by an experienced '
+           'tailor. Hem can be taken up at waist to retain scallop detailing.',
+           "Find out more about Lover's\xa0"],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:18 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:18 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/RedMagick_13.jpg?v=1525308808 HTTP/1.1" 200 434765
+2018-08-14 00:25:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/rm-halo-sheath-dress>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(1570205, (230, 139, 137, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_13.jpg?v=1525308808',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_17.jpg?v=1525308808',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_16.jpg?v=1525308808',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_18.jpg?v=1525308808',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_14.jpg?v=1525308808',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_15.jpg?v=1525308808'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/rm-halo-sheath-dress',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Halo Sheath Dress',
+ 'price': '695.0',
+ 'sizes': ['4', '6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['Delicate French corded lace compliments this contrasting, '
+           'sophisticated dress. Featuring around neckline, set-in sleeve, '
+           'pencil midi skirt and scallop detailed hem.',
+           'Fabrication: 70% Cotton 15% Viscose 15% Polyamide. Lining: 100% '
+           'Polyester.',
+           'Care: Quality Dry Clean Only.',
+           'Fit Notes: Features a midi pencil skirt, fitted at waist with a '
+           'slit at back.',
+           'Alterations: Length can be altered with care by an experienced '
+           'tailor. Hem isåÊcan be taken up at waist to retain scallop '
+           'detailing.',
+           "Find out more about Lover's\xa0"],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/ss18-peony-ggt-midi-dress-bone> (referer: https://www.loverthelabel.com/collections/dresses?page=2)
+2018-08-14 00:25:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/ss18-peony-ggt-mini-dress-navy> (referer: https://www.loverthelabel.com/collections/dresses?page=2)
+2018-08-14 00:25:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/wm-eve-midi-dress> (referer: https://www.loverthelabel.com/collections/dresses?page=3)
+2018-08-14 00:25:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/wm-honour-dress> (referer: https://www.loverthelabel.com/collections/dresses?page=3)
+2018-08-14 00:25:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/plume-lace-mini-ivory> (referer: https://www.loverthelabel.com/collections/dresses?page=3)
+2018-08-14 00:25:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/wm-spirit-midi-dress> (referer: https://www.loverthelabel.com/collections/dresses?page=3)
+2018-08-14 00:25:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/wm-liberty-dress> (referer: https://www.loverthelabel.com/collections/dresses?page=3)
+2018-08-14 00:25:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/wm-halo-hanky-midi> (referer: https://www.loverthelabel.com/collections/dresses?page=3)
+2018-08-14 00:25:19 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:19 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/RedMagick_19.jpg?v=1522733710 HTTP/1.1" 200 507899
+2018-08-14 00:25:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/rm-libra-midi-dress-2>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(1570205, (228, 150, 143, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_19.jpg?v=1522733710',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_20.jpg?v=1522733710',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_21.jpg?v=1522733710',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_22.jpg?v=1522733710',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_23.jpg?v=1522733710',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_24.jpg?v=1522733710'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/rm-libra-midi-dress-2',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Libra Midi Dress',
+ 'price': '895.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Libra Midi is designed and made in Australia from iconic '
+           'Japanese Libra lace and features a sophisticated form-fitting '
+           'silhouette with our signature lace placement, cap sleeve, and '
+           'grown on neckline.',
+           'Fabrication: 65% Nylon 35% Cotton',
+           'Care: Quality Dry Clean only.',
+           'Fit Model is 180cm and wearing a size AU8.',
+           'Due to the open nature of this dress we recommend adhesive cups '
+           'and/or tape where required to help secure the side bust. Please '
+           'hang on internal hanging tape to avoid dropping in lace or fine '
+           'straps.',
+           ':Length can be altered from waist or flare seam to keep feature '
+           'scallop hem intact. Width can be taken in at the sides. We '
+           'recommend any alterations are completed with an experienced '
+           'tailor.',
+           "Find out more about Lover's\xa0"],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:20 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:20 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/RedMagick_25.jpg?v=1525312447 HTTP/1.1" 200 423730
+2018-08-14 00:25:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/rm-poppy-fit-and-flare>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(1570205, (228, 154, 146, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_25.jpg?v=1525312447',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_29.jpg?v=1525312447',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_30.jpg?v=1525312447',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_28.jpg?v=1525312447',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_26.jpg?v=1525312447',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_27.jpg?v=1525312447'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/rm-poppy-fit-and-flare',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Poppy Fit and Flare Dress',
+ 'price': '695.0',
+ 'sizes': ['4', '6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['Elegant and flattering, this Japanese Honiton Applique lace dress '
+           'is designed to skim the contours of the body and is fully lined '
+           'for a smooth silhouette.Featuring a bottle neckline, fitted at the '
+           'waist and flared above the knee skirt.',
+           'Fabrication: 65% Nylon 35% Cotton. Lining: 100% Polyester',
+           'Care: Quality Dry Clean Only',
+           'Fit Notes: Designed to be form fitting around the waist and flared '
+           'at skirt, finishing above the knee.',
+           'Alterations: Length can be altered with care by an experienced '
+           'tailor. Hem is conceal bound.',
+           "Find out more about Lover's\xa0"],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:21 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:21 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/RedMagick_31.jpg?v=1525314066 HTTP/1.1" 200 648403
+2018-08-14 00:25:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/rm-worship-dress-4>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(1570205, (219, 109, 106, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_31.jpg?v=1525314066',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_34.jpg?v=1525314066',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_35.jpg?v=1525314066',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_36.jpg?v=1525314066',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_37.jpg?v=1525314066',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_32.jpg?v=1525314066',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_33.jpg?v=1525314066'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/rm-worship-dress-4',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Worship Dress',
+ 'price': '1495.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Worship is designed and made in Australia from graphic '
+           'Japanese Libra Lace and features signature Lover lace placement, '
+           'graduating hemline, round neckline and cap sleeves. A flattering '
+           'fish tail fit provides movement through the skirt.',
+           'Fabrication: 65% Nylon 35% Cotton',
+           'Care: Quality Dry Clean Only.',
+           'Fit Notes: Features an angled hem, higher at the front and '
+           'finishing just above floor at back. Designed to be form fitting.',
+           'Alterations: Length can be altered with care by an experienced '
+           'tailor. Hem is conceal bound.',
+           "Find out more about Lover'såÊ"],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:22 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:22 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/RedMagick_2.jpg?v=1525308000 HTTP/1.1" 200 472742
+2018-08-14 00:25:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/rm-grace-dress-2>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(1570205, (235, 165, 158, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_2.jpg?v=1525308000',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_5.jpg?v=1525308000',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_6.jpg?v=1525308000',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick.jpg?v=1525308000',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_3.jpg?v=1525308000',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/RedMagick_4.jpg?v=1525308000'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/rm-grace-dress-2',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Grace Dress',
+ 'price': '995.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Grace Dress is designed and made in Australia from delicate '
+           'paisley lace, and features a sophisticated form-fitting silhouette '
+           'with cap sleeves, and romantic scallop hem detail.',
+           'Fabrication: 90% Nylon 10% Rayon, Lining: 100% Polyester',
+           'Care: Quality Dry Clean only.',
+           '\n            ',
+           "Find out more about Lover's\xa0",
+           '\n            '],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:22 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:22 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/AW18_june.jpg?v=1530669399 HTTP/1.1" 200 107595
+2018-08-14 00:25:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/aw18-posy-georgette-slip-dress>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (219, 208, 200, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_june.jpg?v=1530669399',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_june2.jpg?v=1530669399',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_june3.jpg?v=1530669399',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_june4.jpg?v=1530669399',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_june5.jpg?v=1530669399',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_june6.jpg?v=1530669399'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/aw18-posy-georgette-slip-dress',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Posy Georgette Slip Dress',
+ 'price': '220.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Posy Georgette\xa0Slip Dress is from our Autumn Winter 2018 '
+           'collection, GRACE.',
+           'Fabrication: 100% Viscose',
+           'Care: Dry Clean Only (P)',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           "Find out more about Lover's Measurement Guide\xa0"],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:23 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:23 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/AW18_May_21.jpg?v=1526614324 HTTP/1.1" 200 116408
+2018-08-14 00:25:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/posy-satin-dress-bluerose>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (201, 156, 151, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_May_21.jpg?v=1526614324',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_May_24.jpg?v=1526614324',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_May_20.jpg?v=1526614324',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_May_26.jpg?v=1526614324',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_May_23.jpg?v=1526614324',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_May_22.jpg?v=1526614324',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_May_25.jpg?v=1526614324'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/posy-satin-dress-bluerose',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Posy Satin Mini Dress',
+ 'price': '297.5',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Posy Satin Mini Dress is floaty and feminine mini dress made '
+           'from a printed matte sateen viscose. Featuring the Posy\xa0print '
+           'created exclusively for Grace. Featuring long sleeves balanced by '
+           'cinched elastic waist and wrist ribbon ties. Keyhole button '
+           'closure at front.',
+           'The\xa0Posy Satin Mini Dress\xa0is from our Autumn Winter 2018 '
+           'collection, GRACE.',
+           'Available in Blue Rose and Plum.\xa0',
+           'Fabrication: 100% Viscose Lining: 100% Polyester.',
+           'Care: Dry Clean Only (P)',
+           '\n            ',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           "Find out more about Lover's Measurement Guide\xa0"],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:23 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:23 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/AW18_May_19.jpg?v=1528855590 HTTP/1.1" 200 112302
+2018-08-14 00:25:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/aw182posysatinminidress>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (227, 217, 214, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_May_19.jpg?v=1528855590',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Grace_ghost1705142.jpg?v=1528855590',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_May_18.jpg?v=1528855590',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_May_14.jpg?v=1528855590',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_May_15.jpg?v=1528855590',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_May_16.jpg?v=1528855590',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_May_17.jpg?v=1528855590'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/aw182posysatinminidress',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Posy Satin Mini Dress',
+ 'price': '297.5',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Posy Satin Mini Dress is floaty and feminine mini dress made '
+           'from a printed Matte Sateen Viscose.\xa0Made in the Posy\xa0print '
+           'created exclusively for Grace. Featuring long sleeves balanced by '
+           'cinched elastic waist and wrist ribbon ties. Keyhole button '
+           'closure at front.',
+           'The\xa0Posy Satin Mini Dress\xa0is from our Autumn Winter 2018 '
+           'collection, GRACE.',
+           'Available in Blue Rose and Plum.\xa0',
+           'Fabrication: 100% Viscose Lining: 100% Polyester.',
+           'Care: Dry Clean Only (P)',
+           '\n            ',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           "Find out more about Lover's Measurement Guide\xa0"],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:23 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:23 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Midi-Dress-Navy_4.jpg?v=1531800644 HTTP/1.1" 200 110110
+2018-08-14 00:25:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/ss18-peony-ggt-midi-dress>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (144, 142, 145, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Midi-Dress-Navy_4.jpg?v=1531800644',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Midi-Dress-Navy_7.jpg?v=1531800651',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Midi-Dress-Navy_1.jpg?v=1531800657',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Midi-Dress-Navy_2.jpg?v=1531800663',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Midi-Dress-Navy_3.jpg?v=1531800670',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Midi-Dress-Navy_5.jpg?v=1531800677',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Midi-Dress-Navy_6.jpg?v=1531800691'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/ss18-peony-ggt-midi-dress',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Peony Georgette Midi Dress',
+ 'price': '695.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Peony Georgette Midi Dress is an elevated midi-length dress '
+           'beautifully finished with a heavy satin trim. Featuring a custom '
+           'vintage peony wallpaper digital print exclusive to Lover, round '
+           'button neckline with a splice open back and button neck closure. '
+           'Body of dress is lined with double georgette. The circular skirt '
+           'and cinched waist provides subtle movement and an elegant '
+           'silhouette.',
+           'Available in Navy and Bone.\xa0',
+           'The Peony Georgette Midi Dress is from our Spring Summer 2018 '
+           'collection, Rhapsody.\xa0',
+           'Fabrication:\xa0',
+           'Care:This is a quality fabric, due to the delicate nature, please '
+           'handle with Care. DRY CLEAN ONLY (P).\xa0',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           'Find out more about '],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:24 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:24 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Midi-Dress-Bone_2.jpg?v=1531800705 HTTP/1.1" 200 113253
+2018-08-14 00:25:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/ss18-peony-ggt-midi-dress-bone>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (213, 206, 201, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Midi-Dress-Bone_2.jpg?v=1531800705',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Midi-Dress-Bone_6.jpg?v=1531800711',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Midi-Dress-Bone_1.jpg?v=1531800718',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Midi-Dress-Bone_3.jpg?v=1531800724',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Midi-Dress-Bone_4.jpg?v=1531800730',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Midi-Dress-Bone_5.jpg?v=1531800737'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/ss18-peony-ggt-midi-dress-bone',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Peony Georgette Midi Dress',
+ 'price': '695.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Peony Georgette Midi Dress is an elevated midi-length dress '
+           'beautifully finished with a heavy satin trim. Featuring a custom '
+           'vintage peony wallpaper digital print exclusive to Lover, round '
+           'button neckline with a splice open back and button neck closure. '
+           'Body of dress is lined with double georgette. The circular skirt '
+           'and cinched waist provides subtle movement and an elegant '
+           'silhouette.',
+           'Available in Navy and Bone.\xa0',
+           'The Peony Georgette Midi Dress is from our Spring Summer 2018 '
+           'collection, Rhapsody.\xa0',
+           'Fabrication:\xa0',
+           'Care:This is a quality fabric, due to the delicate nature, please '
+           'handle with Care. DRY CLEAN ONLY (P).\xa0',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           'Find out more about '],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:24 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:24 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Mini-Dress-Navy_2.jpg?v=1531800767 HTTP/1.1" 200 102981
+2018-08-14 00:25:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/ss18-peony-ggt-mini-dress-navy>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (167, 158, 156, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Mini-Dress-Navy_2.jpg?v=1531800767',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Mini-Dress-Navy_7.jpg?v=1531800775',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Mini-Dress-Navy_1.jpg?v=1531800782',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Mini-Dress-Navy_3.jpg?v=1531800788',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Mini-Dress-Navy_4.jpg?v=1531800795',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Mini-Dress-Navy_5.jpg?v=1531800801',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Mini-Dress-Navy_6.jpg?v=1531800808'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/ss18-peony-ggt-mini-dress-navy',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Peony Georgette Mini Dress',
+ 'price': '595.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Peony Georgette Mini Dress is an elevated mini-length dress '
+           'beautifully finished with a heavy satin trim. Featuring a custom '
+           'vintage peony wallpaper digital print exclusive to Lover, round '
+           'button neckline with a splice open back and button neck closure. '
+           'Body of dress is lined with double georgette. The circular skirt '
+           'and cinched waist provides subtle movement and an elegant '
+           'silhouette.',
+           'Available in Navy.',
+           'The Peony Georgette Mini Is from our Spring Summer 2018 '
+           'collection, Rhapsody.\xa0',
+           'Fabrication: 100% Viscose.',
+           'Care:',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           'Find out more about '],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:25 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:25 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Whitemagick_6_125.jpg?v=1520921922 HTTP/1.1" 200 103654
+2018-08-14 00:25:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/wm-eve-midi-dress>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (232, 219, 210, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_125.jpg?v=1520921922',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_126.jpg?v=1520921922',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_127.jpg?v=1520921922',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_128.jpg?v=1520921922',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_129.jpg?v=1520921922'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/wm-eve-midi-dress',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Eve Midi Dress',
+ 'price': '650.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Eve Midi Dress is designed and made in Australia from '
+           'beautiful French Rosebud lace, and features a sophisticated sheath '
+           'silhouette with romantic scallop hem detail.',
+           'Fabrication: 80% Cotton, 20% Nylon',
+           'Care: Quality Dry Clean Only (P).',
+           'If your size is unavailable, please email\xa0',
+           '\n            ',
+           'Fit Notes: Due to delicate nature of lace, please use internal '
+           'hang tape to avoid shoulder stretching. Designed to be worn with a '
+           'strapless bra.',
+           'Alterations: Length can be altered from waist seam to keep feature '
+           'scallop hem intact. Width can be taken in at the sides and bodice '
+           'darts. We recommend any alterations are completed with an '
+           'experienced tailor.',
+           "Find out more about Lover's\xa0"],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/wm-grace-dress> (referer: https://www.loverthelabel.com/collections/dresses?page=3)
+2018-08-14 00:25:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/dresses/products/aw18-frances-dress> (referer: https://www.loverthelabel.com/collections/dresses?page=3)
+2018-08-14 00:25:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/skirt/products/aw18-kensington-skirt> (referer: https://www.loverthelabel.com/collections/skirt?page=1)
+2018-08-14 00:25:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/skirt/products/aw18-chester-leather-mini-skirt> (referer: https://www.loverthelabel.com/collections/skirt?page=1)
+2018-08-14 00:25:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/skirt/products/ss18-anchor-flip-skirt> (referer: https://www.loverthelabel.com/collections/skirt?page=1)
+2018-08-14 00:25:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/tops/products/aw18-college-tee> (referer: https://www.loverthelabel.com/collections/tops?page=2)
+2018-08-14 00:25:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/tops/products/aw18-college-tee-3> (referer: https://www.loverthelabel.com/collections/tops?page=1)
+2018-08-14 00:25:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/tops/products/ss18-peony-ggt-top-navy> (referer: https://www.loverthelabel.com/collections/tops?page=1)
+2018-08-14 00:25:25 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:25 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Whitemagick_6_155.jpg?v=1525308856 HTTP/1.1" 200 105882
+2018-08-14 00:25:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/wm-honour-dress>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (234, 222, 215, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_155.jpg?v=1525308856',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_157.jpg?v=1525308856',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_158.jpg?v=1525308856',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_159.jpg?v=1525308856',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_156.jpg?v=1525308856'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/wm-honour-dress',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Honour Dress',
+ 'price': '795.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Honour is designed and made in Australia from our exclusive '
+           'French Warrior Lace. Featuring raglan sleeve with scallop edges, '
+           'high neckline and a flattering silhouette hugging fit.',
+           'Fabrication: 90% Cotton 10% Polyamide',
+           'Care: Quality Dry Clean Only.',
+           'If your size is unavailable, please email\xa0',
+           'Fit Notes:\xa0',
+           'Alterations: Can be altered around front diagonal seams and '
+           'shoulder seam for a more snug fit around bust.',
+           "Find out more about Lover's\xa0"],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:26 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:26 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/flora_drop1_part_5_8.jpg?v=1525312399 HTTP/1.1" 200 77650
+2018-08-14 00:25:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/plume-lace-mini-ivory>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (241, 229, 221, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/flora_drop1_part_5_8.jpg?v=1525312399',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/flora_drop1_part_5_11.jpg?v=1525312399',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/flora_drop1_part_5_10.jpg?v=1525312399',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/flora_drop1_part_5_12.jpg?v=1525312399',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/flora_drop1_part_5_7.jpg?v=1525312399'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/plume-lace-mini-ivory',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Plume Lace Mini',
+ 'price': '278.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['A floaty and feather-light mini dress constructed from delicate '
+           'lace. Featuring sheer lace capped sleeves, a round neckline, and '
+           'cascading tiers below waist for volume and movement.',
+           'Available in Black and Ivory.',
+           'Fabrication: Lace 55% Nylon 45% Viscose Lining 100% Polyester',
+           'Care: Dry Clean Only (P)',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           "Find out more about Lover's Measurement GuideåÊ"],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:26 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:26 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Whitemagick_6_113.jpg?v=1525313872 HTTP/1.1" 200 103304
+2018-08-14 00:25:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/wm-spirit-midi-dress>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (231, 219, 210, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_113.jpg?v=1525313872',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_115.jpg?v=1525313872',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_116.jpg?v=1525313872',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_117.jpg?v=1525313872',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_114.jpg?v=1525313872'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/wm-spirit-midi-dress',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Spirit Midi Dress',
+ 'price': '795.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Spirit Midi is Designed and Made in Australia from an elegant '
+           'rosebud French Lace.featuring a V neckline and fitted silhouette '
+           'finishing below the knee. Perfect for any formal occasion.',
+           'Fabrication: 80% Cotton, 20% Nylon',
+           'Care: Quality Dry Clean Only (P)',
+           '\n            ',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           "Find out more about Lover's Measurement Guide\xa0"],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:27 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:27 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Whitemagick_6_28.jpg?v=1525309311 HTTP/1.1" 200 103885
+2018-08-14 00:25:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/wm-liberty-dress>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (237, 224, 215, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_28.jpg?v=1525309311',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_30.jpg?v=1525309311',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_31.jpg?v=1525309311',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_32.jpg?v=1525309311',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_33.jpg?v=1525309311',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_29.jpg?v=1525309311'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/wm-liberty-dress',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Liberty Dress',
+ 'price': '795.0',
+ 'sizes': ['4', '6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Liberty Dress is designed and made in Australia from beautiful '
+           'French Halo lace. Featuring a sleek midi length fitted silhouette '
+           'with sheer insert at front v neckline, romantic scallop edge '
+           'hemline and a low back.\xa0',
+           'Fabrication: Lace: 70% Cotton, 15% Viscose, 15% Polyamide.',
+           'Care: Quality Dry Clean Only (P).',
+           'If your size is unavailable, please email\xa0',
+           'Fit Model is 180cm and wearing a size AU8.',
+           'Fit Notes: Due to the open nature of this dress we recommend '
+           'adhesive cups and/or tape where required to help secure the side '
+           'bust. Please hang on internal hanging tape to avoid dropping in '
+           'lace or fine straps.',
+           'Alterations: Length can be altered from waist or flare seam to '
+           'keep feature scallop hem intact. Width can be taken in at the '
+           'sides. We recommend any alterations are completed with an '
+           'experienced tailor.',
+           "Find out more about Lover's\xa0"],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:27 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:27 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Whitemagick_6_46.jpg?v=1525308038 HTTP/1.1" 200 110436
+2018-08-14 00:25:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/wm-halo-hanky-midi>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (237, 228, 221, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_46.jpg?v=1525308038',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_48.jpg?v=1525308038',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_49.jpg?v=1525308038',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_50.jpg?v=1525308038',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_51.jpg?v=1525308038',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_47.jpg?v=1525308038'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/wm-halo-hanky-midi',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Halo Hanky Midi',
+ 'price': '895.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Halo Hanky Midi Dress is designed and made in Australia from '
+           'stunning French lace, and features an elegant sheath silhouette '
+           'that cascades into an asymmetric hanky hemline with scallop edge, '
+           'classic round neckline and short sleeves.',
+           'Fabrication: ',
+           'Care: Quality Dry Clean Only (P).',
+           'If your size is unavailable, please email\xa0',
+           'Fit Model is 180cm tall and wearing a size AU8.',
+           'Fit Notes: Designed to be worn with a strapless bra.',
+           'Alterations: Length can be altered from waist to preserve scallop '
+           'edge. We recommend any alterations are completed with an '
+           'experienced tailor.',
+           "Find out more about Lover's\xa0"],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/tops/products/ss18-poet-top> (referer: https://www.loverthelabel.com/collections/tops?page=1)
+2018-08-14 00:25:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/tops/products/ss18-peony-crew-navy> (referer: https://www.loverthelabel.com/collections/tops?page=1)
+2018-08-14 00:25:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/tops/products/ss18-chunky-knit-ivory> (referer: https://www.loverthelabel.com/collections/tops?page=1)
+2018-08-14 00:25:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/tops/products/ss18-peony-ggt-top-bone> (referer: https://www.loverthelabel.com/collections/tops?page=1)
+2018-08-14 00:25:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/tops/products/ss18-lover-college-tee-grey> (referer: https://www.loverthelabel.com/collections/tops?page=1)
+2018-08-14 00:25:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.loverthelabel.com/collections/tops/products/ss18-peony-crew-bone> (referer: https://www.loverthelabel.com/collections/tops?page=1)
+2018-08-14 00:25:28 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:28 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Whitemagick_6_137.jpg?v=1525307980 HTTP/1.1" 200 113278
+2018-08-14 00:25:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/wm-grace-dress>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (234, 221, 211, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_137.jpg?v=1525307980',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_139.jpg?v=1525307980',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_138.jpg?v=1525307980',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_140.jpg?v=1525307980',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Whitemagick_6_141.jpg?v=1525307980'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/wm-grace-dress',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Grace Dress',
+ 'price': '995.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Grace Dress is designed and made in Australia from delicate '
+           'paisley lace, and features a sophisticated form-fitting silhouette '
+           'with cap sleeves, and romantic scallop hem detail.',
+           'Fabrication: 90% Nylon 10% Rayon, Lining: 100% Polyester',
+           'Care: Quality Dry Clean only.',
+           "Find out more about Lover's"],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:28 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:28 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/AW18_April19_37.jpg?v=1525307781 HTTP/1.1" 200 106626
+2018-08-14 00:25:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/dresses/products/aw18-frances-dress>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (139, 125, 118, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_April19_37.jpg?v=1525307781',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_April19_41.jpg?v=1525307781',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_April19_40.jpg?v=1525307781',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_April19_b.jpg?v=1525307781',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_April19_38.jpg?v=1525307781',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_April19_39.jpg?v=1525307781'],
+ 'item_type': ['dresses'],
+ 'link': 'https://www.loverthelabel.com/collections/dresses/products/aw18-frances-dress',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Frances Dress',
+ 'price': '297.5',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Frances Dress is a romantic tiered mini made from intertwined '
+           'floral lace. Featuring a shirred neckline with 4-button detail '
+           'closure, long poet detailed sleeves, tiered skirt with lace trim '
+           'hem and shirred elasticated waist. Dress is lined with an attached '
+           'Georgette slip.',
+           'The Frances Dress is from our Autumn Winter 2018 collection, '
+           'GRACE.',
+           'Fabrication: 75% Nylon 25% Cotton (Lining and Trim: 100% '
+           'Polyester)',
+           'Care: Dry Clean Only (P)',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           "Find out more about Lover's Measurement Guide\xa0"],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:28 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:28 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/AW18_feb_9cff7ff1-3caf-4df4-af32-6ee899ef3ba5.jpg?v=1525309205 HTTP/1.1" 200 82648
+2018-08-14 00:25:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/skirt/products/aw18-kensington-skirt>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (180, 172, 169, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_feb_9cff7ff1-3caf-4df4-af32-6ee899ef3ba5.jpg?v=1525309205',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_feb5.jpg?v=1525309205',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_feb4.jpg?v=1525309205',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_feb2.jpg?v=1525309205',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_feb3.jpg?v=1525309205'],
+ 'item_type': ['skirt'],
+ 'link': 'https://www.loverthelabel.com/collections/skirt/products/aw18-kensington-skirt',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Kensington Skirt',
+ 'price': '140.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The\xa0Kensington Skirt\xa0is a sophisticated mini skirt\xa0in a '
+           'drapey matte viscose. Featuring\xa0a shirred high\xa0waist, cross '
+           'over yolk and a flared hem.\xa0',
+           'The Kensington Skirt is from our Autumn Winter 2018 collection, '
+           'GRACE.',
+           'Fabrication: 97% Viscose 3% Spandex',
+           'Care: Dry Clean Only (P)',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           "Find out more about Lover's Measurement Guide\xa0"],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:29 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:29 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/AW18_march_7.jpg?v=1522208036 HTTP/1.1" 200 97869
+2018-08-14 00:25:29 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2018-08-14 00:25:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/skirt/products/aw18-chester-leather-mini-skirt>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (166, 154, 147, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_march_7.jpg?v=1522208036',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Grace_ghost170905_313.jpg?v=1522208036',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_march_8.jpg?v=1522208036',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_march_9.jpg?v=1522208036',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_march_10.jpg?v=1522208036',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_march_11.jpg?v=1522208036',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/AW18_march_12.jpg?v=1522208036',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/GRACE_Ghost_closeups7.jpg?v=1524464641'],
+ 'item_type': ['skirt'],
+ 'link': 'https://www.loverthelabel.com/collections/skirt/products/aw18-chester-leather-mini-skirt',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Chester Leather Mini Skirt',
+ 'price': '238.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Chester Leather Mini Skirt is a high waist styled A-line Mini '
+           'Skirt made from luxuriously soft Lamb Leather. Featuring Lover’s '
+           'Iconic cross over belt detailing at waist, functional deep rounded '
+           'pockets and centre back zipper closure. The Chester Leather Skirt '
+           'is the perfect trans-seasonal investment piece. Skirt is lined '
+           'with a matte stretch inner.',
+           'The Chester Leather Mini Skirt is from our Autumn Winter 2018 '
+           'collection, GRACE.',
+           'Style Notes: This statement\xa0skirt can be layered with our ',
+           '.',
+           'Care: Professional Leather Cleaning Service Only, Do not Wash, Do '
+           'not Dry Clean, Do not Iron.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           "Find out more about Lover's Measurement Guide\xa0"],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:29 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:29 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Lover-SS18-Anchor-Flip-Skirt-Indigo_2.jpg?v=1531978035 HTTP/1.1" 200 169306
+2018-08-14 00:25:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/skirt/products/ss18-anchor-flip-skirt>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (28, 70, 104, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Anchor-Flip-Skirt-Indigo_2.jpg?v=1531978035',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Anchor-Flip-Skirt-Indigo_3.jpg?v=1531978035',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Anchor-Flip-Skirt-Indigo_1.jpg?v=1531978035',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Anchor-Flip-Skirt-Indigo_4.jpg?v=1531978035',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Anchor-Flip-Skirt-Indigo_5.jpg?v=1531978035'],
+ 'item_type': ['skirt'],
+ 'link': 'https://www.loverthelabel.com/collections/skirt/products/ss18-anchor-flip-skirt',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Anchor Flip Skirt',
+ 'price': '295.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Anchor Flip skirt is a fun and flirty versatile Denim skirt '
+           'made from stretch indigo denim with a soft sandblast wash . '
+           'Featuring Sailor button-front detailing, fit and flare silhouette '
+           'and side entry zip for ease of wear.',
+           'The Anchor Flip Skirt is from our Spring Summer collection, '
+           'Rhapsody.\xa0',
+           'Fabrication: \xa098% Cotton 2% Elastane',
+           'Care: Cold Machine Wash Separately. Do Not Wring, Soak or Bleach. '
+           'Cool Iron With a Pressing Cloth. Dry Cleanable (P).',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           'Find out more about '],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:30 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:30 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Grace_ghost160318.jpg?v=1521677460 HTTP/1.1" 200 32619
+2018-08-14 00:25:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/tops/products/aw18-college-tee>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (239, 233, 234, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Grace_ghost160318.jpg?v=1521677460'],
+ 'item_type': ['tops'],
+ 'link': 'https://www.loverthelabel.com/collections/tops/products/aw18-college-tee',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'College Tee',
+ 'price': '99.0',
+ 'sizes': ['XS', 'S', 'M', 'L'],
+ 'stock': True,
+ 'style': ['Available in White and Grey.',
+           'Fabrication: 100% Cotton',
+           'Care: Gentle Cold Hand Wash, Dry flat in shade. Dry Cleanable.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           "Find out more about Lover's Measurement Guide\xa0"],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:30 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:30 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Ghost_tee_blk.jpg?v=1524464660 HTTP/1.1" 200 33416
+2018-08-14 00:25:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/tops/products/aw18-college-tee-3>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (232, 232, 232, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Ghost_tee_blk.jpg?v=1524464660'],
+ 'item_type': ['tops'],
+ 'link': 'https://www.loverthelabel.com/collections/tops/products/aw18-college-tee-3',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'College Tee',
+ 'price': '99.0',
+ 'sizes': ['XS', 'S', 'M', 'L'],
+ 'stock': True,
+ 'style': ['The Lover College Tee is made from a single jersey cotton, '
+           'featuring our Lover logo screen printed, Classic set in short '
+           "sleeves, a classic crew neckline and the Iconic 'Black Rose Army' "
+           'motif which first appeared in Lover, 2006. A constant symbol of '
+           'beauty and deception.\xa0',
+           'Fabrication: 100% Cotton',
+           'Care: Gentle Cold Hand Wash, Dry flat in shade. Dry Cleanable.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           "Find out more about Lover's Measurement Guide\xa0"],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:30 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:30 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Top-Navy_1.jpg?v=1531800824 HTTP/1.1" 200 86806
+2018-08-14 00:25:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/tops/products/ss18-peony-ggt-top-navy>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (173, 172, 178, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Top-Navy_1.jpg?v=1531800824',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Top-Navy_7.jpg?v=1531800831',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Top-Navy_2.jpg?v=1531800837',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Top-Navy_3.jpg?v=1531800843',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Top-Navy_4.jpg?v=1531800851',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Top-Navy_5.jpg?v=1531800857',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Top-Navy_6.jpg?v=1531800863'],
+ 'item_type': ['tops'],
+ 'link': 'https://www.loverthelabel.com/collections/tops/products/ss18-peony-ggt-top-navy',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Peony Georgette Top',
+ 'price': '395.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Peony Georgette Top is a chic blouse beautifully finished with '
+           'a heavy satin trim. Featuring a custom vintage peony wallpaper '
+           'digital print exclusive to Lover, poet sleeves with button flare '
+           'cuff, round button neckline.',
+           'Available in Navy and Bone.',
+           'The Peony Georgette Top is available in Bone and Navy, and is from '
+           'our Spring Summer 2018 collection, Rhapsody.\xa0',
+           'Fabrication:\xa0',
+           'Care:This is a quality fabric, due to the delicate nature, please '
+           'handle with Care. DRY CLEAN ONLY (P).\xa0',
+           'The Peony Georgette Top is a chic blouse beautifully finished with '
+           'a heavy satin trim. Featuring a custom vintage peony wallpaper '
+           'digital print exclusive to Lover, poet sleeves with button flare '
+           'cuff, round button neckline.',
+           'Available in Navy and Bone.',
+           'The Peony Georgette Top is available in Bone and Navy, and is from '
+           'our Spring Summer 2018 collection, Rhapsody.\xa0',
+           'Fabrication:\xa0',
+           'Care:This is a quality fabric, due to the delicate nature, please '
+           'handle with Care. DRY CLEAN ONLY (P).\xa0',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           'Find out more about '],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:30 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-08-14 00:25:31 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:31 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Lover-SS18-Poet-Top-White_2.jpg?v=1532916654 HTTP/1.1" 200 59845
+2018-08-14 00:25:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/tops/products/ss18-poet-top>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (166, 162, 163, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Poet-Top-White_2.jpg?v=1532916654',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Poet-Top-White_6.jpg?v=1532916654',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Poet-Top-White_1.jpg?v=1532916654',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Poet-Top-White_3.jpg?v=1532916654',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Poet-Top-White_4.jpg?v=1532916654',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Poet-Top-White_5.jpg?v=1532916654',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/rhap_insta_image_3.jpg?v=1533083000'],
+ 'item_type': ['tops'],
+ 'link': 'https://www.loverthelabel.com/collections/tops/products/ss18-poet-top',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Poet Top',
+ 'price': '295.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Poet Top is a modern elevated tailored cotton poplin shirt. '
+           'Featuring elongated cuffs, wrist ties, centre-front placket and '
+           'cut in a feminine silhouette with lace trim detailing. Garment is '
+           'unlined.\xa0',
+           'The Poet Top is from our Spring Summer 2018 collection, '
+           'Rhapsody.\xa0',
+           'Fabrication:\xa0',
+           'Care:',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           'Find out more about '],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:31 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:31 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Lover-SS18-Peony-Crew-Navy_6.jpg?v=1532499674 HTTP/1.1" 200 190244
+2018-08-14 00:25:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/tops/products/ss18-peony-crew-navy>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (103, 108, 119, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Crew-Navy_6.jpg?v=1532499674',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Crew-Navy_2.jpg?v=1532499674',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Crew-Navy_1.jpg?v=1532499674',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Crew-Navy_3.jpg?v=1532499674',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Crew-Navy_4.jpg?v=1532499674',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Crew-Navy_5.jpg?v=1532499674'],
+ 'item_type': ['tops'],
+ 'link': 'https://www.loverthelabel.com/collections/tops/products/ss18-peony-crew-navy',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Peony Crew',
+ 'price': '195.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Peony Crew is made with digitally printed signature Lover '
+           'stretch double knit. Featuring an exclusive custom vintage peony '
+           'wallpaper digital print, exaggerated full sleeve and a classic '
+           'round neckline.',
+           'The Peony Crew is from our Spring Summer collection, Rhapsody.',
+           'Available in Navy and Bone.',
+           'Fabrication:\xa0',
+           'Care:',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           'Find out more about '],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:31 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:31 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Lover-SS18-Chunky-Knit-Ivory_2.jpg?v=1531978899 HTTP/1.1" 200 94971
+2018-08-14 00:25:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/tops/products/ss18-chunky-knit-ivory>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (214, 213, 211, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Chunky-Knit-Ivory_2.jpg?v=1531978899',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Chunky-Knit-Ivory_1.jpg?v=1531978899',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Chunky-Knit-Ivory_3.jpg?v=1531978899',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Chunky-Knit-Ivory_4.jpg?v=1531978899',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Chunky-Knit-Ivory_5.jpg?v=1531978899'],
+ 'item_type': ['tops'],
+ 'link': 'https://www.loverthelabel.com/collections/tops/products/ss18-chunky-knit-ivory',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Chunky Knit',
+ 'price': '395.0',
+ 'sizes': ['XS', 'S', 'M', 'L'],
+ 'stock': True,
+ 'style': ['The Chunky Knit is a heavy cable knit made from a three-gauge '
+           'smooth cotton-blend yarn. Featuring a modern cocoon sleeve with an '
+           'oversized cable design, high turtle neck and a loose silhouette.',
+           'Available in Navy and Ivory.',
+           'The Chunky Knit is from our Spring Summer 2018 collection, '
+           'Rhapsody.\xa0',
+           'Fabrication:\xa0',
+           '75% Cotton',
+           '25% Nylon',
+           'Care:',
+           'Please take care with Jewellry and handling to avoid pulling or '
+           'snagging. Cold Hand Wash or Gentle Machine Wash Separately, Do not '
+           'Bleach, Rub or Soak. Do Not Tumble Dry. Cool iron on Reverse, '
+           'Reshape whilst damp. Dry Flat in Shade, Dry Cleanable. (P)',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           'Find out more about '],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:32 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:32 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Top-Bone_4.jpg?v=1531978498 HTTP/1.1" 200 153206
+2018-08-14 00:25:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/tops/products/ss18-peony-ggt-top-bone>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (152, 158, 172, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Top-Bone_4.jpg?v=1531978498',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Top-Bone_7.jpg?v=1531978498',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Top-Bone_1.jpg?v=1531978498',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Top-Bone_2.jpg?v=1531978498',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Top-Bone_3.jpg?v=1531978498',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Top-Bone_5.jpg?v=1531978498',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Georgette-Top-Bone_6.jpg?v=1531978498'],
+ 'item_type': ['tops'],
+ 'link': 'https://www.loverthelabel.com/collections/tops/products/ss18-peony-ggt-top-bone',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Peony Georgette Top',
+ 'price': '395.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Peony Georgette Top is a chic blouse beautifully finished with '
+           'a heavy satin trim. Featuring a custom vintage peony wallpaper '
+           'digital print exclusive to Lover, poet sleeves with button flare '
+           'cuff, round button neckline.',
+           'Available in Navy and Bone.',
+           'The Peony Georgette Top is available in Bone and Navy, and is from '
+           'our Spring Summer 2018 collection, Rhapsody.\xa0',
+           'Fabrication:\xa0',
+           'Care:This is a quality fabric, due to the delicate nature, please '
+           'handle with Care. DRY CLEAN ONLY (P).\xa0',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           'Find out more about '],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:32 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:32 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Lover-SS18-Lover-College-Tee-Grey-Marle_7.jpg?v=1531800400 HTTP/1.1" 200 118582
+2018-08-14 00:25:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/tops/products/ss18-lover-college-tee-grey>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (178, 181, 189, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Lover-College-Tee-Grey-Marle_7.jpg?v=1531800400',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Lover-College-Tee-Grey-Marle_1.jpg?v=1531800393',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Lover-College-Tee-Grey-Marle_2.jpg?v=1531800442',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Lover-College-Tee-Grey-Marle_3.jpg?v=1531800449',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Lover-College-Tee-Grey-Marle_4.jpg?v=1531800455',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Lover-College-Tee-Grey-Marle_5.jpg?v=1531800463',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Lover-College-Tee-Grey-Marle_6.jpg?v=1531800469'],
+ 'item_type': ['tops'],
+ 'link': 'https://www.loverthelabel.com/collections/tops/products/ss18-lover-college-tee-grey',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Lover College Tee',
+ 'price': '99.0',
+ 'sizes': ['XS', 'S', 'M', 'L'],
+ 'stock': True,
+ 'style': ['Fabrication:\xa0',
+           'Care:',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           'Find out more about '],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:32 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): cdn.shopify.com
+2018-08-14 00:25:32 [requests.packages.urllib3.connectionpool] DEBUG: "GET /s/files/1/1950/6221/products/Lover-SS18-Peony-Crew-Bone_4.jpg?v=1532490756 HTTP/1.1" 200 99620
+2018-08-14 00:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.loverthelabel.com/collections/tops/products/ss18-peony-crew-bone>
+{'address': 'The Strand Arcade Shop 69-71, Level 1/412-414 George St, Sydney '
+            'NSW 2000',
+ 'colours': [(362000, (191, 187, 190, 0))],
+ 'gender': 'Women',
+ 'image_urls': ['https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Crew-Bone_4.jpg?v=1532490756',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Crew-Bone_7.jpg?v=1532490756',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Crew-Bone_2.jpg?v=1532490756',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Crew-Bone_1.jpg?v=1532490756',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Crew-Bone_3.jpg?v=1532490756',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Crew-Bone_5.jpg?v=1532490756',
+                'https://cdn.shopify.com/s/files/1/1950/6221/products/Lover-SS18-Peony-Crew-Bone_6.jpg?v=1532490756'],
+ 'item_type': ['tops'],
+ 'link': 'https://www.loverthelabel.com/collections/tops/products/ss18-peony-crew-bone',
+ 'location': '-33.869459, 151.207524',
+ 'name': 'Peony Crew',
+ 'price': '195.0',
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': ['The Peony Crew is made with digitally printed signature Lover '
+           'stretch double knit. Featuring an exclusive custom vintage peony '
+           'wallpaper digital print, exaggerated full sleeve and a classic '
+           'round crew neckline.',
+           'The Peony Crew is from our Spring Summer collection, Rhapsody.',
+           'Available in Navy and Bone.',
+           'Fabrication:\xa0',
+           'Care:',
+           'Model is 180 cm tall and wearing a size AU 8.',
+           'If your size is unavailable, please email shop@loverthelabel.com',
+           'Find out more about '],
+ 'vendor_name': 'Lover'}
+2018-08-14 00:25:33 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 27846,
+ 'downloader/request_count': 56,
+ 'downloader/request_method_count/GET': 56,
+ 'downloader/response_bytes': 1188276,
+ 'downloader/response_count': 56,
+ 'downloader/response_status_count/200': 56,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2018, 8, 14, 0, 25, 33, 271189),
+ 'item_scraped_count': 48,
+ 'log_count/DEBUG': 153,
+ 'log_count/INFO': 56,
+ 'memusage/max': 75198464,
+ 'memusage/startup': 75198464,
+ 'request_depth_max': 1,
+ 'response_received_count': 56,
+ 'scheduler/dequeued': 55,
+ 'scheduler/dequeued/memory': 55,
+ 'scheduler/enqueued': 55,
+ 'scheduler/enqueued/memory': 55,
+ 'start_time': datetime.datetime(2018, 8, 14, 0, 25, 8, 290611)}
+2018-08-14 00:25:33 [scrapy.core.engine] INFO: Spider closed (shutdown)

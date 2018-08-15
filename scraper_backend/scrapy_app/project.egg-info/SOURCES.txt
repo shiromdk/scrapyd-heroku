@@ -1,0 +1,17 @@
+setup.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt
+scrapy_app/__init__.py
+scrapy_app/items.py
+scrapy_app/middlewares.py
+scrapy_app/pipelines.py
+scrapy_app/runspiders.py
+scrapy_app/settings.py
+scrapy_app/spiders/__init__.py
+scrapy_app/spiders/decjuba_scrapy.py
+scrapy_app/spiders/lover_the_label_scrapy.py
+scrapy_app/spiders/mirkcolorselector.py
+scrapy_app/spiders/review_scrapy.py

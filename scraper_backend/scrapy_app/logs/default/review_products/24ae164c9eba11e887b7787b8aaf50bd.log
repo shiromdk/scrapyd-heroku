@@ -1,0 +1,1312 @@
+2018-08-13 05:31:36 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: scrapy_app)
+2018-08-13 05:31:36 [scrapy.utils.log] INFO: Versions: lxml 4.1.0.0, libxml2 2.9.4, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.6.3 |Anaconda, Inc.| (default, Oct  6 2017, 12:04:38) - [GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)], pyOpenSSL 17.2.0 (OpenSSL 1.0.2l  25 May 2017), cryptography 2.0.3, Platform Darwin-17.7.0-x86_64-i386-64bit
+2018-08-13 05:31:36 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'scrapy_app', 'LOG_FILE': 'logs/default/review_products/24ae164c9eba11e887b7787b8aaf50bd.log', 'NEWSPIDER_MODULE': 'scrapy_app.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['scrapy_app.spiders'], 'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'}
+2018-08-13 05:31:36 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-08-13 05:31:36 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-08-13 05:31:36 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-13 05:31:36 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy_app.pipelines.ScrapyAppPipeline']
+2018-08-13 05:31:36 [scrapy.core.engine] INFO: Spider opened
+2018-08-13 05:31:36 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-13 05:31:36 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-08-13 05:31:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/robots.txt> (referer: None)
+2018-08-13 05:31:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/shop/dresses> (referer: None)
+2018-08-13 05:31:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/octavia-dress-blue/RE19DR098.REBLU122.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:37 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:37 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw78795fe0/images/RE19DR098_REBLU122_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:37 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:37 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw78795fe0/images/RE19DR098_REBLU122_SWATCH.png HTTP/1.1" 200 2878
+2018-08-13 05:31:37 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:37 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:37 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 2800
+2018-08-13 05:31:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/octavia-dress-blue/RE19DR098.REBLU122.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (0, 120, 193, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwea4cdcd3/images/RE19DR098_REBLU122_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwea4cdcd3/images/RE19DR098_REBLU122_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw30afe824/images/RE19DR098_REBLU122_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwcd02d773/images/RE19DR098_REBLU122_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw9d48e1ed/images/RE19DR098_REBLU122_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/octavia-dress-blue/RE19DR098.REBLU122.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Octavia Dress',
+ 'price': 199.99,
+ 'sizes': ['6', '8', '10', '12', '14(Out of Stock)', '16(Out of Stock)'],
+ 'stock': True,
+ 'style': 'Make a bold yet streamlined statement in the Octavia Dress. A '
+          'favourite for elevated office dressing, parties and more, this '
+          'sleek style is crafted from a heavy weight stretch fabric with a '
+          'sleek finish. Sleeveless, the dress features a scoop neck, matching '
+          'removable belt at the waist and a triple layered hem.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/cora-dress-black/RE18DR406.REBLK001.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/woman-in-gold-dress-black/RE18DR381.REBLK010.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/chateau-floral-dress-red-0168af/RE18DR093.RERED112.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/midnight-in-madrid-dress-black/RE18DR396.REBLK073.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/blackbird-dress-black/RE18DR399.REBLK001.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/esmeralda-floral-dress-navy/RE18DR385.RENVY026.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/atlanta-dress-green/RE18DR410.REGRN063.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/athena-dress-navy/RE18DR055.RENVY001.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:37 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:37 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw44fd97f3/images/RE18DR406_REBLK001_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:37 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:37 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw44fd97f3/images/RE18DR406_REBLK001_SWATCH.png HTTP/1.1" 200 2354
+2018-08-13 05:31:37 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:37 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:37 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 2276
+2018-08-13 05:31:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/cora-dress-black/RE18DR406.REBLK001.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (23, 22, 25, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw81322f71/images/RE18DR406_REBLK001_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw81322f71/images/RE18DR406_REBLK001_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwf3d67813/images/RE18DR406_REBLK001_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw2623d263/images/RE18DR406_REBLK001_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw6908ac43/images/RE18DR406_REBLK001_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/cora-dress-black/RE18DR406.REBLK001.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Cora Dress',
+ 'price': 249.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16'],
+ 'stock': True,
+ 'style': "A ladylike classic you'll love, the Cora Dress is a perfect blend "
+          'of playful sophistication and versatile style. The dress is a fully '
+          'lined knee length style with structured seam detailing and side tab '
+          'buttons at the waist. The dress features a contrast white peter pan '
+          'collar and sheer georgette sleeves with a soft textured polka dot '
+          "finish. In a regular fit, you'll love this style with ankle boots "
+          'or dressed up with heels and a red lip.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:37 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:37 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dweaf64cda/images/RE18DR381_REBLK010_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:37 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:37 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dweaf64cda/images/RE18DR381_REBLK010_SWATCH.png HTTP/1.1" 200 6583
+2018-08-13 05:31:37 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:37 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:37 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 6505
+2018-08-13 05:31:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/woman-in-gold-dress-black/RE18DR381.REBLK010.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (47, 45, 48, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw5f46698c/images/RE18DR381_REBLK010_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw5f46698c/images/RE18DR381_REBLK010_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwecaf8882/images/RE18DR381_REBLK010_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw70d24dad/images/RE18DR381_REBLK010_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwdab8f910/images/RE18DR381_REBLK010_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/woman-in-gold-dress-black/RE18DR381.REBLK010.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Woman In Gold Dress',
+ 'price': 179.0,
+ 'sizes': ['6', '8', '10', '12', '14', '16'],
+ 'stock': True,
+ 'style': 'Look and feel golden in the Woman in Gold Dress. Featuring a '
+          'beautiful guipure lace bodice and pleated satin skirt, this dress '
+          "is perfect for your special events this season. What's more, it has "
+          'pockets!',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:38 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:38 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw770944b4/images/RE18DR093_RERED112_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:38 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:38 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw770944b4/images/RE18DR093_RERED112_SWATCH.png HTTP/1.1" 200 9446
+2018-08-13 05:31:38 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:38 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:38 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 8192
+2018-08-13 05:31:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/chateau-floral-dress-red-0168af/RE18DR093.RERED112.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (236, 219, 232, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw7bb2179e/images/RE18DR093_RERED112_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwe6483c24/images/RE18DR093_RERED112_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw6218c20a/images/RE18DR093_RERED112_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwa060bd89/images/RE18DR093_RERED112_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/chateau-floral-dress-red-0168af/RE18DR093.RERED112.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Chateau Floral Dress',
+ 'price': 189.0,
+ 'sizes': ['6', '8', '10', '12', '14', '16'],
+ 'stock': True,
+ 'style': 'The Chateau Floral Dress is a no-brainer. Sweet heart neckline, cap '
+          'sleeves, POCKETS! She?s the dream. In our signature cotton-rich '
+          'fabric, she pairs perfectly with tights and a coat for cooler '
+          'winter days.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:38 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:38 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw1d42b23e/images/RE18DR396_REBLK073_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:38 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:38 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw1d42b23e/images/RE18DR396_REBLK073_SWATCH.png HTTP/1.1" 200 9116
+2018-08-13 05:31:38 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:38 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:38 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 8192
+2018-08-13 05:31:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/midnight-in-madrid-dress-black/RE18DR396.REBLK073.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (104, 91, 82, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw12ff56a8/images/RE18DR396_REBLK073_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw12ff56a8/images/RE18DR396_REBLK073_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw25aa76b7/images/RE18DR396_REBLK073_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw259c90d4/images/RE18DR396_REBLK073_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw7d706d1e/images/RE18DR396_REBLK073_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/midnight-in-madrid-dress-black/RE18DR396.REBLK073.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Midnight In Madrid Dress',
+ 'price': 319.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16', '18(Out of Stock)'],
+ 'stock': True,
+ 'style': 'The Midnight in Madrid Dress is the ultimate in sophisticated '
+          'evening opulence. For a touch of luxe, it has a metallic gold '
+          'thread embroidery design throughout and a heavy textured structure. '
+          'With a defined fit and flare silhouette, the dress flares to a '
+          'voluminous tulle lined skirt and has a relaxed v-neckline and cap '
+          "sleeves. You'll love its grand entrance-making silhouette and "
+          'applique lace trim. Pair yours with patent or velvet textured pumps '
+          'and gold accessories for a memorable evening ensemble.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:38 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:38 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw8365e325/images/RE18DR399_REBLK001_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:38 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:38 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw8365e325/images/RE18DR399_REBLK001_SWATCH.png HTTP/1.1" 200 5674
+2018-08-13 05:31:38 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:38 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:38 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 5596
+2018-08-13 05:31:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/blackbird-dress-black/RE18DR399.REBLK001.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (33, 32, 34, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw0057d495/images/RE18DR399_REBLK001_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw0057d495/images/RE18DR399_REBLK001_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwda38d5fc/images/RE18DR399_REBLK001_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwaa696c47/images/RE18DR399_REBLK001_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwa515862f/images/RE18DR399_REBLK001_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/blackbird-dress-black/RE18DR399.REBLK001.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Blackbird Dress',
+ 'price': 299.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16'],
+ 'stock': True,
+ 'style': 'A sophisticated fit and flare style perfect for the cooler months. '
+          'The Blackbird Dress splices contrasting lace, embroidery and polka '
+          'dot mesh for a layered textural effect and a touch of opulence. The '
+          'dress has embroidered trims and a ruffle hem, sheer mesh long '
+          'sleeves and a lace band at the waist. The dress is fitted through '
+          'the bodice and has a relaxed flare through the skirt. It fastens '
+          'with a concealed back zipper and features a keyhole cut-out at the '
+          'back neck.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:38 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:38 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw100c35c3/images/RE18DR385_RENVY026_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:38 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:38 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw100c35c3/images/RE18DR385_RENVY026_SWATCH.png HTTP/1.1" 200 8873
+2018-08-13 05:31:38 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:38 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:38 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 8192
+2018-08-13 05:31:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/esmeralda-floral-dress-navy/RE18DR385.RENVY026.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (37, 39, 54, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwe8b476e7/images/RE18DR385_RENVY026_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwe8b476e7/images/RE18DR385_RENVY026_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwc7a00178/images/RE18DR385_RENVY026_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwf99d6c23/images/RE18DR385_RENVY026_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwfc47f056/images/RE18DR385_RENVY026_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/esmeralda-floral-dress-navy/RE18DR385.RENVY026.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Esmeralda Floral Dress',
+ 'price': 189.0,
+ 'sizes': ['6', '8', '10', '12', '14', '16'],
+ 'stock': True,
+ 'style': 'The Esmeralda Dress is a beautifully polished wardrobe favourite '
+          'for all seasons. In a delightful pastel floral print on navy, it '
+          'makes a for a fresh and feminine work outfit that can be easily '
+          'dressed up for evening. The lined stretch fabric dress is a '
+          'flattering fit and flare style with long fluted sleeves and a frill '
+          'layered hem. The pretty dress fastens with a concealed back zipper '
+          'and features a soft satin lining.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:38 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:38 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw1cbf995a/images/RE18DR410_REGRN063_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:38 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:38 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw1cbf995a/images/RE18DR410_REGRN063_SWATCH.png HTTP/1.1" 200 7579
+2018-08-13 05:31:38 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:38 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:38 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 7501
+2018-08-13 05:31:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/atlanta-dress-green/RE18DR410.REGRN063.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (9, 49, 55, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwf1dc1160/images/RE18DR410_REGRN063_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwf1dc1160/images/RE18DR410_REGRN063_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw4be8f335/images/RE18DR410_REGRN063_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwc77780ac/images/RE18DR410_REGRN063_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwc40dba7c/images/RE18DR410_REGRN063_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/atlanta-dress-green/RE18DR410.REGRN063.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Atlanta Dress',
+ 'price': 199.0,
+ 'sizes': ['6', '8', '10', '12', '14'],
+ 'stock': True,
+ 'style': 'Make an entrance in lace and lush fringing with the gorgeous '
+          'Atlanta Dress. This sleeveless cocktail and events favourite has a '
+          'classic shift silhouette, fitted through the body with a fringe '
+          'layered hem to the knee. In a deep shade of teal jade, this dress '
+          'has a textured floral lace outer and a smooth satin lining. With '
+          "sheer detailing through the yoke and a concealed back zipper, it'll "
+          'instantly transport you to glam evening style.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:38 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:38 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwe6c5bcf2/images/RE18DR055_RENVY001_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:38 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:38 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwe6c5bcf2/images/RE18DR055_RENVY001_SWATCH.png HTTP/1.1" 200 5316
+2018-08-13 05:31:38 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:38 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:38 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 5238
+2018-08-13 05:31:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/athena-dress-navy/RE18DR055.RENVY001.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (27, 29, 50, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw676cd9e9/images/RE18DR055_RENVY001_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw676cd9e9/images/RE18DR055_RENVY001_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwc9935a23/images/RE18DR055_RENVY001_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwbb6cfa5d/images/RE18DR055_RENVY001_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw7e23e8d2/images/RE18DR055_RENVY001_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/athena-dress-navy/RE18DR055.RENVY001.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Athena Dress',
+ 'price': 279.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16'],
+ 'stock': True,
+ 'style': 'Ornate, feminine and playful, the Athena Dress makes a stunning '
+          'statement for events season. A long sleeve style with a knee-length '
+          'hem, this dress features a floaty sheer chiffon fabrication offset '
+          'with a textured guipure lace outer. Delicate rows of pleating frame '
+          'the dress at the neckline, cuffs and hem for a delightfully '
+          'structured effect. In a regular fit, this dress fastens with a '
+          'concealed back zipper and has a keyhole detail at the back neck. '
+          'The dress is fully lined in a smooth satin fabrication.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/moonrise-dress/RE18DR401.REBLK007.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/love-locket-dress-red/RE19DR035.RERED081.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/atlantic-dress-pink/RE19DR057.REPNK098.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/atlantic-dress-navy/RE19DR057.RENVY001.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/until-forever-maxi-dress-yellow/RE19DR048.REYEL055.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/angel-love-dress-pink/RE19DR018.REPNK098.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/kissed-by-a-rose-prom-dress-navy/RE19DR036.RENVY026.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/black-iris-dress-black/RE19DR002.REBLK055.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwad4f2129/images/RE18DR401_REBLK007_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwad4f2129/images/RE18DR401_REBLK007_SWATCH.png HTTP/1.1" 200 9319
+2018-08-13 05:31:39 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:39 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:39 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 8192
+2018-08-13 05:31:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/moonrise-dress/RE18DR401.REBLK007.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (166, 150, 151, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwafb64e6a/images/RE18DR401_REBLK007_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwafb64e6a/images/RE18DR401_REBLK007_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw39670bf5/images/RE18DR401_REBLK007_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwc024e793/images/RE18DR401_REBLK007_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw4cad3f56/images/RE18DR401_REBLK007_4.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw463f61d2/images/RE18DR401_REBLK007_5.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/moonrise-dress/RE18DR401.REBLK007.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Moonrise Dress',
+ 'price': 299.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16(Out of Stock)'],
+ 'stock': True,
+ 'style': "You'll steal the scene wearing this romantic embroidered dress. A "
+          'sheer mesh and satin style embroidered with delicately lush '
+          "florals, this pencil silhouette is a beautiful events piece you'll "
+          'treasure. It features a fine mesh overlay that offers a sheer '
+          "effect through the neckline, with a sweetheart cut lining. You'll "
+          'love its lace trim bell sleeves, sheer keyhole back and fringed '
+          'lace hemline. ',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwd2846a7a/images/RE19DR035_RERED081_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwd2846a7a/images/RE19DR035_RERED081_SWATCH.png HTTP/1.1" 200 6195
+2018-08-13 05:31:39 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:39 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:39 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 6117
+2018-08-13 05:31:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/love-locket-dress-red/RE19DR035.RERED081.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (205, 31, 52, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw1217cd1f/images/RE19DR035_RERED081_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw1217cd1f/images/RE19DR035_RERED081_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw4b1159a4/images/RE19DR035_RERED081_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw5604a1ca/images/RE19DR035_RERED081_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw6edc5d0d/images/RE19DR035_RERED081_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/love-locket-dress-red/RE19DR035.RERED081.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Love Locket Dress',
+ 'price': 179.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16'],
+ 'stock': True,
+ 'style': 'The Love Locket Dress is likely to be the missing key to your '
+          'perfect all-season capsule wardrobe. In a midweight stretch '
+          'fabrication, the fit and flare style is fitted through the bodice '
+          'and circle skirt flare. Sleeveless with clean lines, the dress '
+          'sports contrast navy binding with a cross-over neckline and keyhole '
+          'detail. The dress has a back zip closure and removable patent belt '
+          'in navy.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwbdb41760/images/RE19DR057_RENVY001_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwbdb41760/images/RE19DR057_RENVY001_SWATCH.png HTTP/1.1" 200 5877
+2018-08-13 05:31:39 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:39 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:39 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 5799
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwd7381b17/images/RE19DR057_REPNK098_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwd7381b17/images/RE19DR057_REPNK098_SWATCH.png HTTP/1.1" 200 6287
+2018-08-13 05:31:39 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:39 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:39 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 6209
+2018-08-13 05:31:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/atlantic-dress-pink/RE19DR057.REPNK098.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (27, 31, 41, 0))], [(576, (238, 221, 229, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw52cf064f/images/RE19DR057_REPNK098_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw52cf064f/images/RE19DR057_REPNK098_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw2eee38c2/images/RE19DR057_REPNK098_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw505fe940/images/RE19DR057_REPNK098_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwa37aab6e/images/RE19DR057_REPNK098_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/atlantic-dress-pink/RE19DR057.REPNK098.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Atlantic Dress',
+ 'price': 229.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16', '18'],
+ 'stock': True,
+ 'style': 'A satin ball gown that harkens back to old Hollywood '
+          'sophistication. The Atlantic Dress makes a gloriously grand yet '
+          'minimal style statement. With pearlescent sheen throughout, the '
+          'dress has elegantly sloping seam detailing providing a feminine fit '
+          "and flare silhouette, extending to full skirt. It's fully lined and "
+          'features a classic v-neckline. Sleeveless with clean lines and a '
+          'dramatic full length hem, it brings timeless femininity to the '
+          'fore.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwbdb41760/images/RE19DR057_RENVY001_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwbdb41760/images/RE19DR057_RENVY001_SWATCH.png HTTP/1.1" 200 5877
+2018-08-13 05:31:39 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:39 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:39 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 5799
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwd7381b17/images/RE19DR057_REPNK098_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwd7381b17/images/RE19DR057_REPNK098_SWATCH.png HTTP/1.1" 200 6287
+2018-08-13 05:31:39 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:39 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:39 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 6209
+2018-08-13 05:31:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/atlantic-dress-navy/RE19DR057.RENVY001.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (27, 31, 41, 0))], [(576, (238, 221, 229, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwa433ec43/images/RE19DR057_RENVY001_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwa433ec43/images/RE19DR057_RENVY001_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw0ea72178/images/RE19DR057_RENVY001_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw6319b4b2/images/RE19DR057_RENVY001_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwa9d944ff/images/RE19DR057_RENVY001_4.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw9b84f731/images/RE19DR057_RENVY001_6.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/atlantic-dress-navy/RE19DR057.RENVY001.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Atlantic Dress',
+ 'price': 229.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16', '18'],
+ 'stock': True,
+ 'style': 'A satin ball gown that harkens back to old Hollywood '
+          'sophistication. The Atlantic Dress makes a gloriously grand yet '
+          'minimal style statement. With pearlescent sheen throughout, the '
+          'dress has elegantly sloping seam detailing providing a feminine fit '
+          "and flare silhouette, extending to full skirt. It's fully lined and "
+          'features a classic v-neckline. Sleeveless with clean lines and a '
+          'dramatic full length hem, it brings timeless femininity to the '
+          'fore.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw04895306/images/RE19DR048_REYEL055_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:39 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw04895306/images/RE19DR048_REYEL055_SWATCH.png HTTP/1.1" 200 7318
+2018-08-13 05:31:39 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:39 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:39 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 7240
+2018-08-13 05:31:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/until-forever-maxi-dress-yellow/RE19DR048.REYEL055.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (233, 222, 219, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw4da76a75/images/RE19DR048_REYEL055_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw4da76a75/images/RE19DR048_REYEL055_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw3b5428f5/images/RE19DR048_REYEL055_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw67433bb8/images/RE19DR048_REYEL055_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw8f1ffd37/images/RE19DR048_REYEL055_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/until-forever-maxi-dress-yellow/RE19DR048.REYEL055.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Until Forever Maxi Dress',
+ 'price': 379.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16'],
+ 'stock': True,
+ 'style': 'Have a red carpet moment in the Until Forever Maxi Dress! Fit for '
+          'Hollywood starlets and Review Girls alike, this maxi features '
+          'striking all-over metallic embroidery over a blush base. The high '
+          'neckline and cinched in waist create an enviable silhouette.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:40 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:40 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw12d6bde9/images/RE19DR018_REPNK098_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:40 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:40 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw12d6bde9/images/RE19DR018_REPNK098_SWATCH.png HTTP/1.1" 200 6376
+2018-08-13 05:31:40 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:40 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:40 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 6298
+2018-08-13 05:31:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/angel-love-dress-pink/RE19DR018.REPNK098.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (232, 211, 212, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw61dbce68/images/RE19DR018_REPNK098_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw61dbce68/images/RE19DR018_REPNK098_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw99a1772e/images/RE19DR018_REPNK098_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwedd2bef2/images/RE19DR018_REPNK098_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw6e16a54c/images/RE19DR018_REPNK098_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/angel-love-dress-pink/RE19DR018.REPNK098.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Angel Love Dress',
+ 'price': 299.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16', '18'],
+ 'stock': True,
+ 'style': 'Delicately rendered in layers of guipure lace in soft blush with a '
+          'pearlescent blush slip lining, the Angel Love Dress offers the '
+          'ultimate in classic femininity. With a pencil silhouette and tiered '
+          'skirt, it features sheer short sleeves, a scalloped v-neckline and '
+          'a concealed back zipper. A beautiful choice for weddings, '
+          'semi-formal occasions and more.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:40 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:40 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwa52bbbe7/images/RE19DR036_RENVY026_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:40 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:40 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwa52bbbe7/images/RE19DR036_RENVY026_SWATCH.png HTTP/1.1" 200 7318
+2018-08-13 05:31:40 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:40 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:40 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 7240
+2018-08-13 05:31:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/kissed-by-a-rose-prom-dress-navy/RE19DR036.RENVY026.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (50, 50, 60, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw058a27a6/images/RE19DR036_RENVY026_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw058a27a6/images/RE19DR036_RENVY026_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwe2f5838a/images/RE19DR036_RENVY026_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw403175ef/images/RE19DR036_RENVY026_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw44b93b8c/images/RE19DR036_RENVY026_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/kissed-by-a-rose-prom-dress-navy/RE19DR036.RENVY026.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Kissed By A Rose Prom Dress',
+ 'price': 279.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16'],
+ 'stock': True,
+ 'style': 'Bloom into a ballroom vision with the gorgeous Kissed by a Rose '
+          "Prom Dress. A showstopping fit and flare style, it's crafted in "
+          'heavy stretch cotton and fully lined with a tulle trim for a '
+          'voluminous flare. The dress is beset with beautiful vintage '
+          'detailing like the centre pleat panel through the waist and the '
+          'removable self covered belt at the waist.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:40 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:40 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw2c694bea/images/RE19DR002_REBLK055_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:40 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:40 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw2c694bea/images/RE19DR002_REBLK055_SWATCH.png HTTP/1.1" 200 6873
+2018-08-13 05:31:40 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:40 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:40 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 6795
+2018-08-13 05:31:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/black-iris-dress-black/RE19DR002.REBLK055.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (83, 83, 78, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw0f3f1053/images/RE19DR002_REBLK055_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw0f3f1053/images/RE19DR002_REBLK055_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwc2126042/images/RE19DR002_REBLK055_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwc623d55d/images/RE19DR002_REBLK055_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwf77ba0f1/images/RE19DR002_REBLK055_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/black-iris-dress-black/RE19DR002.REBLK055.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Black Iris Dress',
+ 'price': 299.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16'],
+ 'stock': True,
+ 'style': 'The Black Iris Dress makes a bold floral impact this season, '
+          'elevating you in the evening style stakes. Cut from a beautiful '
+          'mid-weight stretch crepe, the midi length dress has a tailored fit '
+          'through the body. The smooth dress features a one-shoulder '
+          'silhouette framed by an oversized drape panel across the bodice. On '
+          'stark black, the dress is printed with a modern rose print in soft '
+          'peach and mauve tones. ',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/eternal-love-dress-navy/RE19DR049.RENVY001.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/sugar-hill-dress/RE19DR030.RERED031.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/starlight-dress-yellow/RE19DR009.REYEL054.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/onyx-dress-black/RE18DR344.REBLK001.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/trixibelle-dress-black/RE19DR023.REBLK001.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/serinda-dress-black/RE19DR034.REBLK015.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/wild-camelia-dress-red/RE19DR027.RERED121.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/azzurra-florall-dress-black/RE19DR077.REBLK055.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:40 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:40 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw8783e00a/images/RE19DR049_RENVY001_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:40 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:41 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw8783e00a/images/RE19DR049_RENVY001_SWATCH.png HTTP/1.1" 200 6563
+2018-08-13 05:31:41 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:41 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:41 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 6485
+2018-08-13 05:31:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/eternal-love-dress-navy/RE19DR049.RENVY001.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (72, 78, 111, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwc705e90f/images/RE19DR049_RENVY001_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwc705e90f/images/RE19DR049_RENVY001_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwa4986f84/images/RE19DR049_RENVY001_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw96fedda6/images/RE19DR049_RENVY001_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw7ad4620c/images/RE19DR049_RENVY001_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/eternal-love-dress-navy/RE19DR049.RENVY001.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Eternal Love Dress',
+ 'price': 299.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16', '18'],
+ 'stock': True,
+ 'style': 'Evoke classic elegance in the beautiful Eternal Love Dress complete '
+          'with lace cap sleeves, a scalloped v-neckline and an intricate mesh '
+          'and lace bodice. The midi length georgette skirt is made for high '
+          'impact events glamour (and dancing of course!)',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:41 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:41 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwa6e7909f/images/RE19DR030_RERED031_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:41 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:41 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwa6e7909f/images/RE19DR030_RERED031_SWATCH.png HTTP/1.1" 200 7820
+2018-08-13 05:31:41 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:41 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:41 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 7742
+2018-08-13 05:31:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/sugar-hill-dress/RE19DR030.RERED031.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (142, 43, 80, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw58ff48c9/images/RE19DR030_RERED031_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw58ff48c9/images/RE19DR030_RERED031_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw1f24cc38/images/RE19DR030_RERED031_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwc7e57cb3/images/RE19DR030_RERED031_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw5987c024/images/RE19DR030_RERED031_4.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw8540bb82/images/RE19DR030_RERED031_5.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/sugar-hill-dress/RE19DR030.RERED031.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Sugar Hill Dress',
+ 'price': 299.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16'],
+ 'stock': True,
+ 'style': 'Indulge in the beautiful colour of the Sugar Hill Dress. The ? '
+          'length sleeves are perfect for winter dressing, as is the rich hue. '
+          'All-over lace creates a feminine feel, as does the intricate '
+          'detail.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:41 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:41 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwc6a58e44/images/RE19DR009_REYEL054_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:41 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:41 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwc6a58e44/images/RE19DR009_REYEL054_SWATCH.png HTTP/1.1" 200 7790
+2018-08-13 05:31:41 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:41 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:41 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 7712
+2018-08-13 05:31:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/starlight-dress-yellow/RE19DR009.REYEL054.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (236, 221, 208, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw3723cb57/images/RE19DR009_REYEL054_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwf5cc450c/images/RE19DR009_REYEL054_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwca9e45c9/images/RE19DR009_REYEL054_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw8b0b2195/images/RE19DR009_REYEL054_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/starlight-dress-yellow/RE19DR009.REYEL054.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Starlight Dress',
+ 'price': 199.0,
+ 'sizes': ['6', '8', '10', '12', '14', '16', '18'],
+ 'stock': True,
+ 'style': 'Meet the dress for every occasion, the Starlight Dress. Crafted '
+          'from deluxe satin with an ornate gold lace overlay, this fit and '
+          'flare is one to keep. The v-neckline flatters while the pretty hue '
+          'enchants. Hello wishlist!',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:41 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:41 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw4333b0d4/images/RE18DR344_REBLK001_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:41 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:41 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw4333b0d4/images/RE18DR344_REBLK001_SWATCH.png HTTP/1.1" 200 3040
+2018-08-13 05:31:41 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:41 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:41 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 2962
+2018-08-13 05:31:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/onyx-dress-black/RE18DR344.REBLK001.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (28, 28, 27, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwcfe163d4/images/RE18DR344_REBLK001_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw3e264127/images/RE18DR344_REBLK001_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw0cb17e2f/images/RE18DR344_REBLK001_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwda9c73d2/images/RE18DR344_REBLK001_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/onyx-dress-black/RE18DR344.REBLK001.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Onyx Dress',
+ 'price': 279.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16'],
+ 'stock': True,
+ 'style': 'Ooh la la, look at you in the Onyx Dress! Soon to be your new '
+          'favourite LBD, this beauty features tiered 3/4 length sleeves, a '
+          'round neckline and a shift silhouette. Pair with bright or metallic '
+          'accessories to make the dress pop!',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:41 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:41 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwbe28c4bd/images/RE19DR023_REBLK001_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:41 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:41 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwbe28c4bd/images/RE19DR023_REBLK001_SWATCH.png HTTP/1.1" 200 4780
+2018-08-13 05:31:41 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:41 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:41 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 4702
+2018-08-13 05:31:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/trixibelle-dress-black/RE19DR023.REBLK001.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (35, 33, 33, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw437833e8/images/RE19DR023_REBLK001_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw437833e8/images/RE19DR023_REBLK001_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwa66b2a49/images/RE19DR023_REBLK001_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw878b9cd9/images/RE19DR023_REBLK001_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwe7612fad/images/RE19DR023_REBLK001_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/trixibelle-dress-black/RE19DR023.REBLK001.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Trixibelle Dress',
+ 'price': 249.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16'],
+ 'stock': True,
+ 'style': 'Let delicate lace and classic structure define your day to night '
+          'style in the chic Trixibelle Dress. A flattering fit and flare '
+          "style you'll treasure, the dress features lace throughout the "
+          'bodice with cuffed sleeves and a flare skirt in medium weight '
+          'stretch crepe. The dress cinches at the waist with a removable '
+          'patent belt and features a centre ruffle frill.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:41 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:41 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw68cbfa3d/images/RE19DR034_REBLK015_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:41 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:41 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw68cbfa3d/images/RE19DR034_REBLK015_SWATCH.png HTTP/1.1" 200 9018
+2018-08-13 05:31:41 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:41 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:41 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 8192
+2018-08-13 05:31:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/serinda-dress-black/RE19DR034.REBLK015.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (100, 86, 90, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw732c0834/images/RE19DR034_REBLK015_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw732c0834/images/RE19DR034_REBLK015_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw0f3a1add/images/RE19DR034_REBLK015_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwaf021790/images/RE19DR034_REBLK015_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwb8d78d2f/images/RE19DR034_REBLK015_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/serinda-dress-black/RE19DR034.REBLK015.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Serinda Dress',
+ 'price': 199.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16'],
+ 'stock': True,
+ 'style': "Slip into the Serinda Dress for a look that's instantly polished "
+          'yet playful. The lightweight georgette dress is a classic fit and '
+          'flare style that suits day or evening. It features a modern petal '
+          'print throughout of pink on black. Feminine yet fresh, the dress '
+          'has a ruffle frill that accents the v-neckline and a removable '
+          'patent belt at the waist.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:41 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:41 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw1d3b0849/images/RE19DR027_RERED121_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:41 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:41 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw1d3b0849/images/RE19DR027_RERED121_SWATCH.png HTTP/1.1" 200 8140
+2018-08-13 05:31:41 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:42 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:42 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 8062
+2018-08-13 05:31:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/wild-camelia-dress-red/RE19DR027.RERED121.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (243, 99, 104, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw270c240b/images/RE19DR027_RERED121_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw270c240b/images/RE19DR027_RERED121_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw5160162f/images/RE19DR027_RERED121_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwee9e2897/images/RE19DR027_RERED121_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwecb579ab/images/RE19DR027_RERED121_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/wild-camelia-dress-red/RE19DR027.RERED121.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Wild Camelia Dress',
+ 'price': 279.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16'],
+ 'stock': True,
+ 'style': 'A fresh floral mood is set to take your style into feminine new '
+          'territory. The Wild Camelia Dress is the perfect pick for a modern '
+          'cocktail or evening look. Printed with a vintage camelia flower '
+          'design over deep berry magenta, this halter neck dress is fitted '
+          'through the bodice and features pleats throughout the midi length '
+          'skirt. The dress is fully lined and fastens with a concealed back '
+          'zipper.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:42 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:42 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwcbb687cb/images/RE19DR077_REBLK055_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:42 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:42 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwcbb687cb/images/RE19DR077_REBLK055_SWATCH.png HTTP/1.1" 200 7951
+2018-08-13 05:31:42 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:42 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:42 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 7873
+2018-08-13 05:31:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/azzurra-florall-dress-black/RE19DR077.REBLK055.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (38, 36, 36, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw6451257d/images/RE19DR077_REBLK055_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw6451257d/images/RE19DR077_REBLK055_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw2d36a7b3/images/RE19DR077_REBLK055_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw2bfa06f9/images/RE19DR077_REBLK055_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwa302e8bb/images/RE19DR077_REBLK055_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/azzurra-florall-dress-black/RE19DR077.REBLK055.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Azzurra Floral Dress',
+ 'price': 299.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16', '18'],
+ 'stock': True,
+ 'style': 'Make an opulent floral statement in the Azzura Dress. This luxe fit '
+          'and flare style features a black satin lining overlaid with fine '
+          'mesh and bold floral embroidery. Sheer mesh bell sleeves feature a '
+          'lace trim and a pencil silhouette offers a refined finish.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/melrose-dress-black/RE19DR028.REBLK075.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/aquarius-dress-navy/RE19DR075.RENVY008.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/mi-amore-floral-dress-black/RE19DR155.REBLK055.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/madison-avenue-dress-navy/RE19DR055.RENVY012.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/mombasa-dress-red/RE19DR074.RERED053.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/midnight-dahlia-dress-navy/RE19DR096.RENVY026.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/almost-heaven-dress-red-c93d7a/RE19DR066.RERED102.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/twilight-dress-red/RE19DR072.RERED038.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:42 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:42 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwbaca63dc/images/RE19DR028_REBLK075_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:42 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:42 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwbaca63dc/images/RE19DR028_REBLK075_SWATCH.png HTTP/1.1" 200 8090
+2018-08-13 05:31:42 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:42 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:42 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 8012
+2018-08-13 05:31:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/melrose-dress-black/RE19DR028.REBLK075.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (42, 40, 41, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw53c95d7a/images/RE19DR028_REBLK075_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw53c95d7a/images/RE19DR028_REBLK075_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw24287277/images/RE19DR028_REBLK075_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw3bbf634f/images/RE19DR028_REBLK075_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwee798f6d/images/RE19DR028_REBLK075_4.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwcd82b864/images/RE19DR028_REBLK075_5.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/melrose-dress-black/RE19DR028.REBLK075.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Melrose Dress',
+ 'price': 299.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16'],
+ 'stock': True,
+ 'style': 'Look no further than the Melrose Dress. In striking black with '
+          'contrast detailing, this fitted midi dress is the perfect companion '
+          'to flirty soirees. Cute cap sleeves and the fluted hem create a '
+          'feminine silhouette.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:42 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:42 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwe81b1abd/images/RE19DR075_RENVY008_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:42 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:42 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwe81b1abd/images/RE19DR075_RENVY008_SWATCH.png HTTP/1.1" 200 8345
+2018-08-13 05:31:42 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:42 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:42 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 8192
+2018-08-13 05:31:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/aquarius-dress-navy/RE19DR075.RENVY008.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (39, 40, 51, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwde27cb20/images/RE19DR075_RENVY008_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwde27cb20/images/RE19DR075_RENVY008_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw614ab0d8/images/RE19DR075_RENVY008_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw25c4620d/images/RE19DR075_RENVY008_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw31ffca01/images/RE19DR075_RENVY008_4.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw85b1f805/images/RE19DR075_RENVY008_5.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/aquarius-dress-navy/RE19DR075.RENVY008.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Aquarius Dress',
+ 'price': 349.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16', '18'],
+ 'stock': True,
+ 'style': 'Be the belle of the ball in the beautiful Aquarius Dress. The off '
+          'the shoulder neckline flatters the female figure in a fashionable '
+          "way, while the full lace skirts adds instant drama. She's feminine, "
+          'fun, and all yours if you add to cart!',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:42 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:42 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw7ecf9156/images/RE19DR155_REBLK055_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:42 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:42 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw7ecf9156/images/RE19DR155_REBLK055_SWATCH.png HTTP/1.1" 200 7236
+2018-08-13 05:31:42 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:42 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:42 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 7158
+2018-08-13 05:31:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/mi-amore-floral-dress-black/RE19DR155.REBLK055.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (33, 30, 31, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw144642e3/images/RE19DR155_REBLK055_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw144642e3/images/RE19DR155_REBLK055_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw75c540d5/images/RE19DR155_REBLK055_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwf2c8564a/images/RE19DR155_REBLK055_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwefd763dd/images/RE19DR155_REBLK055_4.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw19090e59/images/RE19DR155_REBLK055_5.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/mi-amore-floral-dress-black/RE19DR155.REBLK055.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Mi Amore Floral Dress',
+ 'price': 279.99,
+ 'sizes': ['4', '6', '8', '10', '12', '14', '16'],
+ 'stock': True,
+ 'style': 'Step out in full bloom style wearing the gorgeous Mi Amore Floral '
+          'print Dress. Eye-catching and endlessly feminine, the fit and flare '
+          'style is cut from a lightweight printed georgette and is lined '
+          'through the body and skirt. The dress features sheer sleeves, a '
+          'v-neckline, fitted bodice and relaxed full skirt.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:43 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:43 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw8feb0912/images/RE19DR055_RENVY012_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:43 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:43 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw8feb0912/images/RE19DR055_RENVY012_SWATCH.png HTTP/1.1" 200 7162
+2018-08-13 05:31:43 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:43 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:43 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 7084
+2018-08-13 05:31:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/madison-avenue-dress-navy/RE19DR055.RENVY012.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (44, 51, 68, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw109a942e/images/RE19DR055_RENVY012_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw4748253d/images/RE19DR055_RENVY012_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw70d7fb28/images/RE19DR055_RENVY012_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw1159321c/images/RE19DR055_RENVY012_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/madison-avenue-dress-navy/RE19DR055.RENVY012.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Madison Avenue Dress',
+ 'price': 299.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16', '18'],
+ 'stock': True,
+ 'style': 'Shift into new season in the Madison Avenue Dress. This shift dress '
+          'features a flattering v-neckline, three-quarter fluted sleeves and '
+          'beautifully intricate navy lace. Pair with sparkly accessories and '
+          'a bright smile for your next special occasion.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:43 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:43 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwbfa7e1a2/images/RE19DR074_RERED053_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:43 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:43 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwbfa7e1a2/images/RE19DR074_RERED053_SWATCH.png HTTP/1.1" 200 8114
+2018-08-13 05:31:43 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:43 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:43 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 8036
+2018-08-13 05:31:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/mombasa-dress-red/RE19DR074.RERED053.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (159, 42, 81, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwe54384a0/images/RE19DR074_RERED053_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwe54384a0/images/RE19DR074_RERED053_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwa42dcc56/images/RE19DR074_RERED053_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw9c48786d/images/RE19DR074_RERED053_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw203a4ab8/images/RE19DR074_RERED053_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/mombasa-dress-red/RE19DR074.RERED053.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Mombasa Dress',
+ 'price': 349.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16'],
+ 'stock': True,
+ 'style': 'For evening style that causes a scarlet sensation, make it the '
+          'Mombasa. Part luxe throwback, part modern fantasy, this lace '
+          'sleeveless dress plays with textures, with layers of long fringing '
+          'over smooth satin. The fitted dress has a midi length and '
+          'v-neckline.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:43 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:43 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwc6dc8dad/images/RE19DR096_RENVY026_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:43 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:43 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwc6dc8dad/images/RE19DR096_RENVY026_SWATCH.png HTTP/1.1" 200 8763
+2018-08-13 05:31:43 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:43 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:43 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 8192
+2018-08-13 05:31:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/midnight-dahlia-dress-navy/RE19DR096.RENVY026.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (47, 47, 54, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwdfa6d9c2/images/RE19DR096_RENVY026_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwdfa6d9c2/images/RE19DR096_RENVY026_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw0fa44ed5/images/RE19DR096_RENVY026_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw400ac413/images/RE19DR096_RENVY026_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw06867dbb/images/RE19DR096_RENVY026_4.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw96adec71/images/RE19DR096_RENVY026_5.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/midnight-dahlia-dress-navy/RE19DR096.RENVY026.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Midnight Dahlia Dress',
+ 'price': 299.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16'],
+ 'stock': True,
+ 'style': 'Elevate your evenings in stunning satin florals this season. The '
+          'Midnight Dahlia Dress makes a chic addition to your collection. In '
+          'a fit and flare full skirt silhouette, the dress has a cross-over '
+          'v-neck bodice framed with wide ruched shoulder bands. The fully '
+          'lined dress is printed with intense peach and purple roses on '
+          'black. ',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:43 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:43 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw1173bc1e/images/RE19DR066_RERED102_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:43 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:43 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw1173bc1e/images/RE19DR066_RERED102_SWATCH.png HTTP/1.1" 200 6616
+2018-08-13 05:31:43 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:43 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:43 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 6538
+2018-08-13 05:31:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/almost-heaven-dress-red-c93d7a/RE19DR066.RERED102.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (247, 233, 233, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw36230458/images/RE19DR066_RERED102_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwdde6e7da/images/RE19DR066_RERED102_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw985a366b/images/RE19DR066_RERED102_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw9744355d/images/RE19DR066_RERED102_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/almost-heaven-dress-red-c93d7a/RE19DR066.RERED102.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Almost Heaven Dress',
+ 'price': 329.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16'],
+ 'stock': True,
+ 'style': 'The Almost Heaven Dress is just heavenly. In a beautifully soft and '
+          'feminine colour palette, this dress features dreamy floral '
+          'embroidery and a twirl-friendly tiered skirt. Easy to dress down '
+          'with a cardi or up with heels, the Almost Heaven Dress is one for '
+          'your wishlist!',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:43 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:43 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw3436c37b/images/RE19DR072_RERED038_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:43 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:43 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw3436c37b/images/RE19DR072_RERED038_SWATCH.png HTTP/1.1" 200 4149
+2018-08-13 05:31:43 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:43 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:43 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 4071
+2018-08-13 05:31:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/twilight-dress-red/RE19DR072.RERED038.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (174, 0, 84, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwd11b9dce/images/RE19DR072_RERED038_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwd11b9dce/images/RE19DR072_RERED038_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw21a6ff03/images/RE19DR072_RERED038_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw81d87126/images/RE19DR072_RERED038_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw6ec21088/images/RE19DR072_RERED038_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/twilight-dress-red/RE19DR072.RERED038.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Twilight Maxi Dress',
+ 'price': 329.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16'],
+ 'stock': True,
+ 'style': 'A sweeping hem and guipure lace create a sense of occasion and '
+          'elegance with the Twilight Maxi Dress. Designed to flatter, it has '
+          'a fitted sleeveless bodice with an ornate lace outerlayer with a '
+          'matching inner crepe backing. Wide shoulder straps and al lace '
+          "v-neckline elegantly frame the decolletage. It's fitted at the "
+          'waist and features a relaxed drape skirt in beautiful crepe '
+          'chiffon, lined with satin.The dress features a concealed back zip '
+          'closure. ',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/valley-of-dreams-maxi-dress-black/RE19DR053.REBLK001.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/miss-violetta-dress-purple/RE19DR133.RENVY011.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/oh-my-daisy-dress-navy-72a0c8/RE19DR081.RENVY026.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/luxor-dress-red/RE19DR022.RERED038.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/eclipse-dress-purple/RE19DR082.REPUR024.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.review-australia.com/au/mascot-dress-navy/RE19DR026.RENVY001.html?cgid=shop-dresses> (referer: https://www.review-australia.com/au/shop/dresses)
+2018-08-13 05:31:43 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:43 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwe04eab3b/images/RE19DR053_REBLK001_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:43 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:44 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwe04eab3b/images/RE19DR053_REBLK001_SWATCH.png HTTP/1.1" 200 3515
+2018-08-13 05:31:44 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:44 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:44 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 3437
+2018-08-13 05:31:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/valley-of-dreams-maxi-dress-black/RE19DR053.REBLK001.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (31, 29, 29, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwaa6513f7/images/RE19DR053_REBLK001_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwaa6513f7/images/RE19DR053_REBLK001_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw28b74395/images/RE19DR053_REBLK001_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwa7980da6/images/RE19DR053_REBLK001_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw2318b7e4/images/RE19DR053_REBLK001_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/valley-of-dreams-maxi-dress-black/RE19DR053.REBLK001.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Valley Of Dreams Maxi Dress',
+ 'price': 299.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16', '18'],
+ 'stock': True,
+ 'style': 'For simplicity that speaks volumes, look to the elegant Valley of '
+          'Dreams Maxi Dress. Refined yet sultry, this full length dress is '
+          'crafted from heavy weight stretch crepe with a floor length '
+          'georgette overlay skirt. Flattering and versatile, this maxi dress '
+          'has a deep v-neckline framed with a crossover panels that extend up '
+          'to the shoulders. The dress fastens with a concealed back zip.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:44 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:44 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw455c8fa3/images/RE19DR133_RENVY011_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:44 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:44 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw455c8fa3/images/RE19DR133_RENVY011_SWATCH.png HTTP/1.1" 200 8198
+2018-08-13 05:31:44 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:44 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:44 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 8120
+2018-08-13 05:31:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/miss-violetta-dress-purple/RE19DR133.RENVY011.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (170, 151, 209, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw59ca3de8/images/RE19DR133_RENVY011_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw59ca3de8/images/RE19DR133_RENVY011_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw87c26779/images/RE19DR133_RENVY011_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw81ef868c/images/RE19DR133_RENVY011_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwdaf9810f/images/RE19DR133_RENVY011_4.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw7038e4ca/images/RE19DR133_RENVY011_5.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/miss-violetta-dress-purple/RE19DR133.RENVY011.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Miss Violetta Dress',
+ 'price': 279.99,
+ 'sizes': ['4', '6', '8', '10', '12', '14', '16(Out of Stock)'],
+ 'stock': True,
+ 'style': 'Meet the new girl on the block. The Miss Violetta Dress combines a '
+          'feminine floral print with a beautiful purple colour. This '
+          'one-shoulder design features a self-tie fabric belt to cinch in at '
+          'the waist, and a flattering flippy skirt. ',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:44 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:44 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw44962457/images/RE19DR081_RENVY026_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:44 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:44 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw44962457/images/RE19DR081_RENVY026_SWATCH.png HTTP/1.1" 200 6946
+2018-08-13 05:31:44 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:44 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:44 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 6868
+2018-08-13 05:31:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/oh-my-daisy-dress-navy-72a0c8/RE19DR081.RENVY026.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (30, 37, 52, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw53882a3b/images/RE19DR081_RENVY026_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw53882a3b/images/RE19DR081_RENVY026_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw602edc01/images/RE19DR081_RENVY026_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw18b737f3/images/RE19DR081_RENVY026_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwcb539739/images/RE19DR081_RENVY026_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/oh-my-daisy-dress-navy-72a0c8/RE19DR081.RENVY026.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Oh My Daisy Dress',
+ 'price': 199.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16'],
+ 'stock': True,
+ 'style': 'Delightfully demure and eye-catching, the Oh My Daisy Dress makes a '
+          'chic impact. The sleeveless style is cut from a sleek printed scuba '
+          'and has a straight shift silhouette and knee length hem. The high '
+          'mock neckline is offset with a tie detail at the side. ',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:44 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:44 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw4b9de3e3/images/RE19DR022_RERED038_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:44 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:44 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw4b9de3e3/images/RE19DR022_RERED038_SWATCH.png HTTP/1.1" 200 7925
+2018-08-13 05:31:44 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:44 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:44 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 7847
+2018-08-13 05:31:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/luxor-dress-red/RE19DR022.RERED038.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (163, 20, 79, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwc641aa2b/images/RE19DR022_RERED038_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwc641aa2b/images/RE19DR022_RERED038_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwe406da15/images/RE19DR022_RERED038_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwe2c1740b/images/RE19DR022_RERED038_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwc325fce5/images/RE19DR022_RERED038_4.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw96adec71/images/RE19DR022_RERED038_5.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/luxor-dress-red/RE19DR022.RERED038.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Luxor Dress',
+ 'price': 299.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16'],
+ 'stock': True,
+ 'style': 'Colour and texture come together in beautiful harmony with the '
+          'Luxor Dress. In striking raspberry coloured lace, this dress '
+          'features dreamy cap sleeves, a v-neckline, pleated skirt and fitted '
+          'bodice. Pair with sparkly pumps for the perfect evening look.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:44 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:44 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwa299f45f/images/RE19DR082_REPUR024_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:44 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:44 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dwa299f45f/images/RE19DR082_REPUR024_SWATCH.png HTTP/1.1" 200 8137
+2018-08-13 05:31:44 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:44 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:44 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 8059
+2018-08-13 05:31:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/eclipse-dress-purple/RE19DR082.REPUR024.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (140, 138, 183, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw495328a0/images/RE19DR082_REPUR024_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw495328a0/images/RE19DR082_REPUR024_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw32f881be/images/RE19DR082_REPUR024_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwfa87a4fe/images/RE19DR082_REPUR024_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwa2bcc32f/images/RE19DR082_REPUR024_4.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw7038e4ca/images/RE19DR082_REPUR024_5.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/eclipse-dress-purple/RE19DR082.REPUR024.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Eclipse Dress',
+ 'price': 299.99,
+ 'sizes': ['4', '6', '8', '10', '12', '14', '16'],
+ 'stock': True,
+ 'style': 'Turn heads and win hearts at your next event in the Eclipse dress. '
+          'A sleeveless guipure lace gown of dusk wisteria over a pale lilac '
+          'lining, this dress is soft yet bold. Fitted, with a structured '
+          'v-neck bodice and a full voluminous skirt, the tea-length dress is '
+          'a piece to treasure.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:44 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): review-australia.com
+2018-08-13 05:31:44 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw08e6081d/images/RE19DR026_RENVY001_SWATCH.png HTTP/1.1" 301 178
+2018-08-13 05:31:44 [requests.packages.urllib3.connectionpool] INFO: Starting new HTTPS connection (1): www.review-australia.com
+2018-08-13 05:31:44 [requests.packages.urllib3.connectionpool] DEBUG: "GET /on/demandware.static/-/Sites-review-master-catalog/default/dw08e6081d/images/RE19DR026_RENVY001_SWATCH.png HTTP/1.1" 200 4336
+2018-08-13 05:31:44 [PIL.PngImagePlugin] DEBUG: STREAM b'IHDR' 16 13
+2018-08-13 05:31:44 [PIL.PngImagePlugin] DEBUG: STREAM b'pHYs' 41 9
+2018-08-13 05:31:44 [PIL.PngImagePlugin] DEBUG: STREAM b'IDAT' 62 4258
+2018-08-13 05:31:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.review-australia.com/au/mascot-dress-navy/RE19DR026.RENVY001.html?cgid=shop-dresses>
+{'address': 'Shop 2051, Westfield Sydney City188 Pitt St Sydney, NSW Australia '
+            '2000',
+ 'colours': [[(576, (53, 51, 75, 0))]],
+ 'gender': 'Women',
+ 'image_urls': ['https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw535d0974/images/RE19DR026_RENVY001_1.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw535d0974/images/RE19DR026_RENVY001_1.jpg?sw=168&sh=204&sm=fit',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw636f693c/images/RE19DR026_RENVY001_2.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dw70903a8d/images/RE19DR026_RENVY001_3.jpg',
+                'https://www.review-australia.com/dw/image/v2/BBBB_PRD/on/demandware.static/-/Sites-review-master-catalog/default/dwa2a0c8e1/images/RE19DR026_RENVY001_4.jpg'],
+ 'item_type': 'dresses',
+ 'link': 'https://www.review-australia.com/au/mascot-dress-navy/RE19DR026.RENVY001.html?cgid=shop-dresses',
+ 'location': '-33.869557, 151.208841',
+ 'name': 'Mascot Dress',
+ 'price': 249.99,
+ 'sizes': ['6', '8', '10', '12', '14', '16'],
+ 'stock': True,
+ 'style': 'The Mascot Dress is a chic classic set to feature on high rotation '
+          'for any REVIEW girl. A heavy stretch cotton blend fabrication '
+          'offers structure and comfort in this bombshell silhouette style. '
+          'The fitted bodice is offset with a full skirt that has gathered '
+          'pleats from the waist. A vintage inspired neckline features a '
+          'fold-down layer and wide shoulder straps. Fully lined, the navy '
+          'dress gets a pop of colour with its removable yellow belt at the '
+          'waist.',
+ 'vendor_name': 'Review'}
+2018-08-13 05:31:45 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-08-13 05:31:45 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 40207,
+ 'downloader/request_count': 41,
+ 'downloader/request_method_count/GET': 41,
+ 'downloader/response_bytes': 804995,
+ 'downloader/response_count': 41,
+ 'downloader/response_status_count/200': 41,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 8, 13, 5, 31, 45, 211251),
+ 'item_scraped_count': 39,
+ 'log_count/DEBUG': 286,
+ 'log_count/INFO': 89,
+ 'memusage/max': 75235328,
+ 'memusage/startup': 75235328,
+ 'request_depth_max': 1,
+ 'response_received_count': 41,
+ 'scheduler/dequeued': 40,
+ 'scheduler/dequeued/memory': 40,
+ 'scheduler/enqueued': 40,
+ 'scheduler/enqueued/memory': 40,
+ 'start_time': datetime.datetime(2018, 8, 13, 5, 31, 36, 432745)}
+2018-08-13 05:31:45 [scrapy.core.engine] INFO: Spider closed (finished)
