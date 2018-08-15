@@ -6,7 +6,7 @@ from sys import argv
 from twisted.scripts.twistd import run
 
 import scrapyd_heroku as project
-
+import django
 
 def main():
     argv[1:1] = ['-n', '-y', join(dirname(project.__file__), 'app.py')]
